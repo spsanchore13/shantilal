@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/shantilal/static/css/main.073c9b0a.css",
-    "main.js": "/shantilal/static/js/main.99740759.js",
-    "static/js/787.28cb0dcd.chunk.js": "/shantilal/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo.svg": "/shantilal/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/shantilal/static/css/main.51411e9c.css",
+    "main.js": "/shantilal/static/js/main.04df3b8c.js",
     "index.html": "/shantilal/index.html",
-    "main.073c9b0a.css.map": "/shantilal/static/css/main.073c9b0a.css.map",
-    "main.99740759.js.map": "/shantilal/static/js/main.99740759.js.map",
-    "787.28cb0dcd.chunk.js.map": "/shantilal/static/js/787.28cb0dcd.chunk.js.map"
+    "main.51411e9c.css.map": "/shantilal/static/css/main.51411e9c.css.map",
+    "main.04df3b8c.js.map": "/shantilal/static/js/main.04df3b8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.99740759.js"
+    "static/css/main.51411e9c.css",
+    "static/js/main.04df3b8c.js"
   ]
 }
