@@ -7,9 +7,11 @@ import {
   useColorMode,
   VStack,
 } from "@chakra-ui/react";
+import { HashLink, NavHashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 import { FaSun, FaMoon } from "react-icons/fa";
 import styles from "./Navbar.module.css";
+import Social from "./Social";
 
 function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -17,16 +19,18 @@ function Navbar() {
   const isDark = colorMode === "dark";
 
   return (
-    <VStack display={["none", "none", "flex"]}>
-      <Flex w="100vw" px="10px" py="10px" align="center">
-        {/* <Img src="" alt="react-logo" w="45px" h="40px" /> */}
-
-        <Heading fontWeight="semibold" color="cyan.400">
-          Shantilal Patliya
-        </Heading>
-        <Spacer />
+    <HStack
+      display={["none", "none", "flex"]}
+      position="sticky"
+      top="0"
+      bgColor={isDark ? "gray.800" : "white"}
+      borderBottom="1px"
+      borderColor="gray.100"
+    >
+      <Social />
+      <Spacer />
+      <Flex px="20px" py="5px" align="center">
         <HStack
-          // border="1px solid red"
           w="50vw"
           display="flex"
           justifyContent="space-evenly"
@@ -50,7 +54,15 @@ function Navbar() {
             ABOUT
           </NavLink>
           <NavLink
-            to="/projcets"
+            to="/skills"
+            className={({ isActive }) =>
+              isActive ? styles.active : styles.default
+            }
+          >
+            SKILLS
+          </NavLink>
+          <NavLink
+            to="/projects"
             className={({ isActive }) =>
               isActive ? styles.active : styles.default
             }
@@ -73,7 +85,7 @@ function Navbar() {
           onClick={toggleColorMode}
         />
       </Flex>
-    </VStack>
+    </HStack>
   );
 }
 
