@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/shantilal/static/css/main.51411e9c.css",
-    "main.js": "/shantilal/static/js/main.04df3b8c.js",
+    "main.js": "/shantilal/static/js/main.815af1ae.js",
     "index.html": "/shantilal/index.html",
     "main.51411e9c.css.map": "/shantilal/static/css/main.51411e9c.css.map",
-    "main.04df3b8c.js.map": "/shantilal/static/js/main.04df3b8c.js.map"
+    "main.815af1ae.js.map": "/shantilal/static/js/main.815af1ae.js.map"
   },
   "entrypoints": [
     "static/css/main.51411e9c.css",
-    "static/js/main.04df3b8c.js"
+    "static/js/main.815af1ae.js"
   ]
 }
