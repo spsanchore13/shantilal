@@ -1,11 +1,151 @@
-import { Box, SimpleGrid, Stack } from "@chakra-ui/react";
+import { EmailIcon } from "@chakra-ui/icons";
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  FormControl,
+  FormLabel,
+  Grid,
+  GridItem,
+  Heading,
+  HStack,
+  Img,
+  Input,
+  SimpleGrid,
+  Stack,
+  Text,
+  Textarea,
+  useMediaQuery,
+  useToast,
+  VStack,
+} from "@chakra-ui/react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 function Contact() {
+  const toast = useToast();
+  const form = useRef();
+  const [isNotSmallScreen] = useMediaQuery("(min-width: 768px)");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_bmljxlc",
+        "template_y0zk1ki",
+        form.current,
+        "3gN69WiObyR6bLZHy"
+      )
+      .then(
+        () => {
+          toast({
+            title: "Sent",
+            description: "We've sent your mail successfully",
+            status: "success",
+            duration: 2000,
+            isClosable: true,
+          });
+        },
+        () => {
+          toast({
+            title: `Fail`,
+            isClosable: true,
+          });
+        }
+      );
+  };
+
   return (
-    <Stack border="2px solid salmon" h="90vh">
-      <SimpleGrid columns={[1, 1, 2, 2]} spacing={10} p={[2, 4, 10, 10]}>
-        <Box bg="tomato" height="80vh"></Box>
-        <Box bg="tomato" height="80vh">
-          
+    <Stack id="contact" py={20}>
+      <SimpleGrid
+        border="1px solid red"
+        columns={[1, 1, 2, 2]}
+        spacing="10"
+        py={10}
+      >
+        <VStack boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px" p={10}>
+          <Img
+            src="https://scontent.fjai1-1.fna.fbcdn.net/v/t39.30808-1/285255308_157473410101800_4442239155515215538_n.jpg?stp=c65.8.312.312a_dst-jpg_p320x320&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=IltUYfXSRAYAX9n9Mnh&_nc_ht=scontent.fjai1-1.fna&oh=00_AT8egA6xinRjXJCQynJKr4r2avVbnFd-6kx9hNpZcp3Jjg&oe=6321F0E3"
+            alt="img"
+            rounded="full"
+            boxSize="150px"
+          />
+          <Text fontSize="2xl" fontWeight="semibold">
+            Shantilal Patliya
+          </Text>
+          <Text fontSize={["lg", "lg", "2xl", "2xl"]} fontWeight="semibold">
+            9784102014
+          </Text>
+          <Text fontSize={["lg", "lg", "2xl", "2xl"]} fontWeight="semibold">
+            shantilalpatliya18@gmail.com
+          </Text>
+
+          <SimpleGrid columns={[1, 2, 2, 2]} spacing="10px" w="70%">
+            <Button
+              onClick={() =>
+                window.open("https://api.whatsapp.com/send?phone=9784102014")
+              }
+              colorScheme="whatsapp"
+              leftIcon={<FaWhatsapp />}
+            >
+              WhatsApp
+            </Button>
+            <Button
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/spsanchore13/")
+              }
+              colorScheme="linkedin"
+              leftIcon={<FaLinkedin />}
+            >
+              LinkedIn
+            </Button>
+          </SimpleGrid>
+        </VStack>
+
+        <Box boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px" p="2px">
+          <Text
+            align="center"
+            fontSize={["lg", "2xl", "3xl", "3xl"]}
+            fontWeight="bold"
+            pb="10px"
+          >
+            Send Me Email
+          </Text>
+          <Container>
+            <form ref={form}>
+              <FormControl isRequired>
+                <FormLabel>Enter Name</FormLabel>
+                <Input type="text" name="user_name" mb={2} />
+              </FormControl>
+              <FormControl isRequired>
+                <FormLabel>Email address</FormLabel>
+                <Input type="email" name="user_email" mb={2} />
+              </FormControl>
+              <FormControl isRequired>
+                <FormLabel>Enter Your Message</FormLabel>
+                <Textarea
+                  name="message"
+                  // value={value}
+                  // onChange={handleInputChange}
+                  placeholder="Here is a sample placeholder"
+                  size="sm"
+                  mb={2}
+                />
+              </FormControl>
+              <Button
+                leftIcon={<EmailIcon />}
+                variant="outline"
+                w="100%"
+                _hover={{ backgroundColor: "blue.400" }}
+                bgColor="blue.500"
+                onClick={sendEmail}
+              >
+                Send
+              </Button>
+            </form>
+          </Container>
         </Box>
       </SimpleGrid>
     </Stack>

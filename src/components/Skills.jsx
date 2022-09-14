@@ -16,7 +16,7 @@ function Skills() {
 
   const isDark = colorMode === "dark";
   return (
-    <Stack py="50px" px="10px">
+    <Stack py="50px" px="10px" border="1px solid red" id="skills">
       <SimpleGrid columns={[2, 3, 4, 5]} spacing={5}>
         <Box align="center">
           <Img
