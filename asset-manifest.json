@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/shantilal/static/css/main.51411e9c.css",
-    "main.js": "/shantilal/static/js/main.470b2d11.js",
+    "main.js": "/shantilal/static/js/main.b93fbd10.js",
+    "static/media/spsanchore.jpg": "/shantilal/static/media/spsanchore.bb24efe864bf116863b5.jpg",
+    "static/media/Shantilal_Resume.pdf": "/shantilal/static/media/Shantilal_Resume.c33da9e79e2e57a922a3.pdf",
     "index.html": "/shantilal/index.html",
     "main.51411e9c.css.map": "/shantilal/static/css/main.51411e9c.css.map",
-    "main.470b2d11.js.map": "/shantilal/static/js/main.470b2d11.js.map"
+    "main.b93fbd10.js.map": "/shantilal/static/js/main.b93fbd10.js.map"
   },
   "entrypoints": [
     "static/css/main.51411e9c.css",
-    "static/js/main.470b2d11.js"
+    "static/js/main.b93fbd10.js"
   ]
 }
