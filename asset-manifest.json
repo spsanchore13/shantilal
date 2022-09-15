@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shantilal/static/css/main.1cad6951.css",
-    "main.js": "/shantilal/static/js/main.da630679.js",
+    "main.js": "/shantilal/static/js/main.051f6f05.js",
     "static/media/bathandbody1.png": "/shantilal/static/media/bathandbody1.4b119c319cf81344b702.png",
     "static/media/spsanchore.jpg": "/shantilal/static/media/spsanchore.bb24efe864bf116863b5.jpg",
     "static/media/todo2.png": "/shantilal/static/media/todo2.dc23dd901ccd235160a8.png",
@@ -14,10 +14,10 @@
     "static/media/Shantilal_Resume.pdf": "/shantilal/static/media/Shantilal_Resume.c33da9e79e2e57a922a3.pdf",
     "index.html": "/shantilal/index.html",
     "main.1cad6951.css.map": "/shantilal/static/css/main.1cad6951.css.map",
-    "main.da630679.js.map": "/shantilal/static/js/main.da630679.js.map"
+    "main.051f6f05.js.map": "/shantilal/static/js/main.051f6f05.js.map"
   },
   "entrypoints": [
     "static/css/main.1cad6951.css",
-    "static/js/main.da630679.js"
+    "static/js/main.051f6f05.js"
   ]
 }
