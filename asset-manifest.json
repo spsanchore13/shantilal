@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/shantilal/static/css/main.51411e9c.css",
-    "main.js": "/shantilal/static/js/main.b93fbd10.js",
+    "main.css": "/shantilal/static/css/main.1cad6951.css",
+    "main.js": "/shantilal/static/js/main.da630679.js",
+    "static/media/bathandbody1.png": "/shantilal/static/media/bathandbody1.4b119c319cf81344b702.png",
     "static/media/spsanchore.jpg": "/shantilal/static/media/spsanchore.bb24efe864bf116863b5.jpg",
+    "static/media/todo2.png": "/shantilal/static/media/todo2.dc23dd901ccd235160a8.png",
+    "static/media/bestbuy1.png": "/shantilal/static/media/bestbuy1.ae3b5288474e4c1f3f11.png",
+    "static/media/pharmeasy1.png": "/shantilal/static/media/pharmeasy1.a451bb5af082d4c45c78.png",
+    "static/media/bestbuy2.png": "/shantilal/static/media/bestbuy2.7376d2b2b9254fee5d14.png",
+    "static/media/bathandbody2.png": "/shantilal/static/media/bathandbody2.f746da4bc82f091ede9f.png",
+    "static/media/pharmeasy2.png": "/shantilal/static/media/pharmeasy2.6baf0d02729fb33ea41f.png",
+    "static/media/todo1.png": "/shantilal/static/media/todo1.7ee0af44f1514ba45b62.png",
     "static/media/Shantilal_Resume.pdf": "/shantilal/static/media/Shantilal_Resume.c33da9e79e2e57a922a3.pdf",
     "index.html": "/shantilal/index.html",
-    "main.51411e9c.css.map": "/shantilal/static/css/main.51411e9c.css.map",
-    "main.b93fbd10.js.map": "/shantilal/static/js/main.b93fbd10.js.map"
+    "main.1cad6951.css.map": "/shantilal/static/css/main.1cad6951.css.map",
+    "main.da630679.js.map": "/shantilal/static/js/main.da630679.js.map"
   },
   "entrypoints": [
-    "static/css/main.51411e9c.css",
-    "static/js/main.b93fbd10.js"
+    "static/css/main.1cad6951.css",
+    "static/js/main.da630679.js"
   ]
 }
