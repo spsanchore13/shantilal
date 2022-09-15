@@ -1,5 +1,62 @@
-/* /* .name{
-    background: rgb(,0,36);
-   background-clip: co;
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    /* background: linear(to-r,cyan.400,blue.500,purple.600) *//* */
+
+.image-container1{   
+    background-image: url("./Image/bestbuy2.png");
+    background-size: cover;
+  }
+ .image-container1 > img{
+    width:100%;
+    display:block;
+    transition: opacity 1s ease;
+  }
+  
+  .image-container1:hover img{
+    opacity: 0;
+  }
+
+  
+.image-container2{   
+    background-image: url("./Image/pharmeasy2.png");
+    background-size: cover;
+  }
+ .image-container2 > img{
+    width:100%;
+    display:block;
+    transition: opacity 1s ease;
+  }
+  
+  .image-container2:hover img{
+    opacity: 0;
+  }
+
+  .image-container3{   
+    background-image: url("./Image/bathandbody2.png");
+    background-size: cover;
+  }
+ .image-container3 > img{
+    width:100%;
+    display:block;
+    transition: opacity 1s ease;
+  }
+  
+  .image-container3:hover img{
+    opacity: 0;
+  }
+
+  .image-container4{   
+    background-image: url("./Image/todo2.png");
+    background-size: cover;
+  }
+ .image-container4 > img{
+    width:100%;
+    display:block;
+    transition: opacity 1s ease;
+  }
+  
+  .image-container4:hover img{
+    opacity: 0;
+  }
+
+  .Typewriter{
+    color: gray;
+    font-size:20px;
+  }

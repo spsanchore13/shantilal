@@ -39,18 +39,19 @@ function Navbar() {
   return (
     <>
       <HStack
-        display={["none", "none", "flex"]}
+        display={["none", "none", "none", "flex"]}
         zIndex={10}
         position="sticky"
         top="0"
         bgColor={isDark ? "gray.800" : "white"}
         borderBottom="1px"
         borderColor="gray.100"
+        h="60px"
       >
         <Social />
         <Spacer />
 
-        <Flex px="20px" py="5px" align="center">
+        <Flex px="20px" align="center">
           <HStack
             w="50vw"
             display="flex"
@@ -63,7 +64,7 @@ function Navbar() {
               smooth={true}
               duration={1000}
               spy={true}
-              // offset={50}
+              offset={-50}
               activeClass={styles.active}
             >
               HOME
@@ -119,11 +120,10 @@ function Navbar() {
       </HStack>
 
       <HStack
-        py="2px"
         px="10px"
         borderBottom="1px"
         borderColor="gray.100"
-        display={["flex", "flex", "none", "none"]}
+        display={["flex", "flex", "flex", "none"]}
       >
         <IconButton
           aria-label="Open Menu"
@@ -163,7 +163,6 @@ function Navbar() {
                 smooth={true}
                 duration={1000}
                 spy={true}
-                // offset={50}
                 activeClass={styles.active}
               >
                 HOME
@@ -203,7 +202,7 @@ function Navbar() {
                 smooth={true}
                 duration={1000}
                 spy={true}
-                // offset={-10}
+                // offset={50}
                 activeClass={styles.active}
               >
                 CONTACT

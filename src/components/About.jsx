@@ -14,6 +14,9 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import GitHubCalendar from "react-github-calendar";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 function About() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -33,7 +36,7 @@ function About() {
           // border="1px solid red"
           w={["100%", "100%", "80%", "80%"]}
         >
-          <Flex>
+          <Flex data-aos="fade-right">
             <Text
               align="left"
               fontSize={["lg", "xl"]}
@@ -45,7 +48,7 @@ function About() {
               forward to joining a progressive and challenging work environment.
             </Text>
           </Flex>
-          <Flex justify="start" w={["100%", "100%"]}>
+          <Flex justify="start" w={["100%", "100%"]} data-aos="fade-left">
             <Flex direction="row">
               <Divider
                 orientation="vertical"
@@ -91,10 +94,10 @@ function About() {
             </Flex>
           </Flex>
         </SimpleGrid>
-        <HStack w="100%" justify="center" p={10}>
+        <HStack w="100%" justify="center" p={10} data-aos="fade-up">
           <GitHubCalendar username="spsanchore13" />
         </HStack>
-        <HStack p={2} justify="center">
+        <HStack p={2} justify="center" data-aos="fade-up">
           <SimpleGrid columns={[1, 1, 2, 2]} spacing={5}>
             <HStack spacing={5}>
               <Img

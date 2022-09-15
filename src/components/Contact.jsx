@@ -20,9 +20,14 @@ import {
   useToast,
   VStack,
 } from "@chakra-ui/react";
+import myImage from "../Image/spsanchore.jpg";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 function Contact() {
   const toast = useToast();
   const form = useRef();
@@ -58,19 +63,23 @@ function Contact() {
   };
 
   return (
-    <Stack id="contact" py={20}>
-      <SimpleGrid
-        border="1px solid red"
-        columns={[1, 1, 2, 2]}
-        spacing="10"
-        py={10}
-      >
-        <VStack boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px" p={10}>
+    <Stack id="contact">
+      <Text fontSize="3xl" align="center">
+        CONTACT ME
+      </Text>
+      <SimpleGrid columns={[1, 1, 2, 2]} spacing="10" py={10}>
+        <VStack
+          boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px"
+          p={10}
+          data-aos="zoom-in"
+          spacing={10}
+        >
           <Img
-            src="https://scontent.fjai1-1.fna.fbcdn.net/v/t39.30808-1/285255308_157473410101800_4442239155515215538_n.jpg?stp=c65.8.312.312a_dst-jpg_p320x320&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=IltUYfXSRAYAX9n9Mnh&_nc_ht=scontent.fjai1-1.fna&oh=00_AT8egA6xinRjXJCQynJKr4r2avVbnFd-6kx9hNpZcp3Jjg&oe=6321F0E3"
+            src={myImage}
             alt="img"
             rounded="full"
             boxSize="150px"
+            objectFit="cover"
           />
           <Text fontSize="2xl" fontWeight="semibold">
             Shantilal Patliya
@@ -84,9 +93,7 @@ function Contact() {
 
           <SimpleGrid columns={[1, 2, 2, 2]} spacing="10px" w="70%">
             <Button
-              onClick={() =>
-                window.open("https://api.whatsapp.com/send?phone=9784102014")
-              }
+              onClick={() => window.open("https://wa.me/+919784102014")}
               colorScheme="whatsapp"
               leftIcon={<FaWhatsapp />}
             >
@@ -104,7 +111,13 @@ function Contact() {
           </SimpleGrid>
         </VStack>
 
-        <Box boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px" p="2px">
+        <VStack
+          spacing={10}
+          boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px"
+          p="2px"
+          py={12}
+          data-aos="zoom-in"
+        >
           <Text
             align="center"
             fontSize={["lg", "2xl", "3xl", "3xl"]}
@@ -117,11 +130,11 @@ function Contact() {
             <form ref={form}>
               <FormControl isRequired>
                 <FormLabel>Enter Name</FormLabel>
-                <Input type="text" name="user_name" mb={2} />
+                <Input type="text" name="user_name" mb={5} />
               </FormControl>
               <FormControl isRequired>
                 <FormLabel>Email address</FormLabel>
-                <Input type="email" name="user_email" mb={2} />
+                <Input type="email" name="user_email" mb={5} />
               </FormControl>
               <FormControl isRequired>
                 <FormLabel>Enter Your Message</FormLabel>
@@ -131,7 +144,7 @@ function Contact() {
                   // onChange={handleInputChange}
                   placeholder="Here is a sample placeholder"
                   size="sm"
-                  mb={2}
+                  mb={5}
                 />
               </FormControl>
               <Button
@@ -146,7 +159,7 @@ function Contact() {
               </Button>
             </form>
           </Container>
-        </Box>
+        </VStack>
       </SimpleGrid>
     </Stack>
   );

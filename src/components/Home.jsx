@@ -11,6 +11,8 @@ import {
 } from "@chakra-ui/react";
 import myimg from "../Image/spsanchore.jpg";
 import myresume from "../Resume/Shantilal_Resume.pdf";
+import Typewriter from "typewriter-effect";
+// import { Wave } from "react-animated-text";
 
 function Home() {
   const { colorMode } = useColorMode();
@@ -36,12 +38,23 @@ function Home() {
             bgClip="text"
           >
             SHANTILAL PATLIYA
-            {/* <Wave text="SHANTILA PATLIYA" effect="jump" effectChange={0.7} /> */}
           </Text>
+          {/* <Wave text="SHANTILAL PATLIYA" effect="jump" effectChange={2} /> */}
 
-          <Text color={isDark ? "gray.200" : "gray.500"}>
+          {/* <Text color={isDark ? "gray.200" : "gray.500"}>
             Full Stack Web Developer
-          </Text>
+          </Text> */}
+          <Typewriter
+            options={{
+              strings: [
+                "Full Stack Web Developer",
+                "Problem Solver",
+                "Debugger",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
           <a href={myresume} download>
             <Button mt={5} mb={5} colorScheme="blue">
               RESUME

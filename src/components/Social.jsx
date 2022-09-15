@@ -9,7 +9,7 @@ import {
 
 function Social() {
   return (
-    <HStack spacing="10" ml="130px">
+    <HStack spacing="10" ml={[0, 0, 0, "120px"]}>
       <Icon
         as={FaGithub}
         boxSize="30"

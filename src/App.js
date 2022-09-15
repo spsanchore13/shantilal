@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import AllRoutes from "./Routes/AllRoutes";
+import "./app.css"
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       {/* <Navbar /> */}
       <Navbar />
       <AllRoutes />
-      {/* <Home /> */}
+      <Home />
       <About />
       <Skills />
       <Projects />
