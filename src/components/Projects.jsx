@@ -63,38 +63,48 @@ function Projects() {
             <Img src={bestbuy1} alt="img" />
           </Box>
 
-          <Text align="left">
-            Bestbuy is an american electronics product website
-          </Text>
-          <HStack>
-            <Text color="red.600" fontWeight="bold">
-              Text Stack:
+          <VStack spacing={3} align="left">
+            <Text align="left">
+              Bestbuy is an american electronics product website
             </Text>
-            <Text>HTML5</Text>
-            <Divider
-              orientation="vertical"
-              border="2px"
-              height="10px"
-              bgColor="skyblue"
-            />
-            <Text>CSS3</Text>
-            <Divider
-              orientation="vertical"
-              bgColor="skyblue"
-              border="2px"
-              height="10px"
-            />
-            <Text>JavaScript</Text>
-          </HStack>
-          <Text>a collobarotive project built in 4 day team lead by me</Text>
-          <HStack>
-            <Button leftIcon={<FaGithub />} colorScheme="blue" variant="solid">
-              Github
-            </Button>
-            <Button leftIcon={<LinkIcon />} colorScheme="blue" variant="solid">
-              Live
-            </Button>
-          </HStack>
+            <HStack>
+              <Text color="red.600" fontWeight="bold">
+                Text Stack:
+              </Text>
+              <Text>HTML5</Text>
+              <Divider
+                orientation="vertical"
+                border="2px"
+                height="10px"
+                bgColor="skyblue"
+              />
+              <Text>CSS3</Text>
+              <Divider
+                orientation="vertical"
+                bgColor="skyblue"
+                border="2px"
+                height="10px"
+              />
+              <Text>JavaScript</Text>
+            </HStack>
+            <Text>a collobarotive project built in 4 day team lead by me</Text>
+            <HStack>
+              <Button
+                leftIcon={<FaGithub />}
+                colorScheme="blue"
+                variant="solid"
+              >
+                Github
+              </Button>
+              <Button
+                leftIcon={<LinkIcon />}
+                colorScheme="blue"
+                variant="solid"
+              >
+                Live
+              </Button>
+            </HStack>
+          </VStack>
         </VStack>
 
         <VStack
@@ -110,36 +120,49 @@ function Projects() {
           <Box className="image-container2">
             <Img src={pharmeasy1} alt="img" />
           </Box>
-          <Text>Bestbuy is an american electronics product website</Text>
-          <HStack>
-            <Text color="red.600" fontWeight="bold">
-              Text Stack:
+
+          <VStack spacing={3} align="left">
+            <Text align="left">
+              Bestbuy is an american electronics product website
             </Text>
-            <Text>HTML5</Text>
-            <Divider
-              orientation="vertical"
-              border="2px"
-              height="10px"
-              bgColor="skyblue"
-            />
-            <Text>CSS3</Text>
-            <Divider
-              orientation="vertical"
-              bgColor="skyblue"
-              border="2px"
-              height="10px"
-            />
-            <Text>JavaScript</Text>
-          </HStack>
-          <Text>a collobarotive project built in 4 day team lead by me</Text>
-          <HStack>
-            <Button leftIcon={<FaGithub />} colorScheme="blue" variant="solid">
-              Github
-            </Button>
-            <Button leftIcon={<LinkIcon />} colorScheme="blue" variant="solid">
-              Live
-            </Button>
-          </HStack>
+            <HStack>
+              <Text color="red.600" fontWeight="bold">
+                Text Stack:
+              </Text>
+              <Text>HTML5</Text>
+              <Divider
+                orientation="vertical"
+                border="2px"
+                height="10px"
+                bgColor="skyblue"
+              />
+              <Text>CSS3</Text>
+              <Divider
+                orientation="vertical"
+                bgColor="skyblue"
+                border="2px"
+                height="10px"
+              />
+              <Text>JavaScript</Text>
+            </HStack>
+            <Text>a collobarotive project built in 4 day team lead by me</Text>
+            <HStack>
+              <Button
+                leftIcon={<FaGithub />}
+                colorScheme="blue"
+                variant="solid"
+              >
+                Github
+              </Button>
+              <Button
+                leftIcon={<LinkIcon />}
+                colorScheme="blue"
+                variant="solid"
+              >
+                Live
+              </Button>
+            </HStack>
+          </VStack>
         </VStack>
 
         <VStack
@@ -155,36 +178,49 @@ function Projects() {
           <Box className="image-container3">
             <Img src={bathandbody1} alt="img" />
           </Box>
-          <Text>Bestbuy is an american electronics product website</Text>
-          <HStack>
-            <Text color="red.600" fontWeight="bold">
-              Text Stack:
+
+          <VStack spacing={3} align="left">
+            <Text align="left">
+              Bestbuy is an american electronics product website
             </Text>
-            <Text>HTML5</Text>
-            <Divider
-              orientation="vertical"
-              border="2px"
-              height="10px"
-              bgColor="skyblue"
-            />
-            <Text>CSS3</Text>
-            <Divider
-              orientation="vertical"
-              bgColor="skyblue"
-              border="2px"
-              height="10px"
-            />
-            <Text>JavaScript</Text>
-          </HStack>
-          <Text>a collobarotive project built in 4 day team lead by me</Text>
-          <HStack>
-            <Button leftIcon={<FaGithub />} colorScheme="blue" variant="solid">
-              Github
-            </Button>
-            <Button leftIcon={<LinkIcon />} colorScheme="blue" variant="solid">
-              Live
-            </Button>
-          </HStack>
+            <HStack>
+              <Text color="red.600" fontWeight="bold">
+                Text Stack:
+              </Text>
+              <Text>HTML5</Text>
+              <Divider
+                orientation="vertical"
+                border="2px"
+                height="10px"
+                bgColor="skyblue"
+              />
+              <Text>CSS3</Text>
+              <Divider
+                orientation="vertical"
+                bgColor="skyblue"
+                border="2px"
+                height="10px"
+              />
+              <Text>JavaScript</Text>
+            </HStack>
+            <Text>a collobarotive project built in 4 day team lead by me</Text>
+            <HStack>
+              <Button
+                leftIcon={<FaGithub />}
+                colorScheme="blue"
+                variant="solid"
+              >
+                Github
+              </Button>
+              <Button
+                leftIcon={<LinkIcon />}
+                colorScheme="blue"
+                variant="solid"
+              >
+                Live
+              </Button>
+            </HStack>
+          </VStack>
         </VStack>
 
         <VStack
@@ -200,36 +236,49 @@ function Projects() {
           <Box className="image-container4">
             <Img src={todo1} alt="img" />
           </Box>
-          <Text>Bestbuy is an american electronics product website</Text>
-          <HStack>
-            <Text color="red.600" fontWeight="bold">
-              Text Stack:
+
+          <VStack spacing={3} align="left">
+            <Text align="left">
+              Bestbuy is an american electronics product website
             </Text>
-            <Text>HTML5</Text>
-            <Divider
-              orientation="vertical"
-              border="2px"
-              height="10px"
-              bgColor="skyblue"
-            />
-            <Text>CSS3</Text>
-            <Divider
-              orientation="vertical"
-              bgColor="skyblue"
-              border="2px"
-              height="10px"
-            />
-            <Text>JavaScript</Text>
-          </HStack>
-          <Text>a collobarotive project built in 4 day team lead by me</Text>
-          <HStack>
-            <Button leftIcon={<FaGithub />} colorScheme="blue" variant="solid">
-              Github
-            </Button>
-            <Button leftIcon={<LinkIcon />} colorScheme="blue" variant="solid">
-              Live
-            </Button>
-          </HStack>
+            <HStack>
+              <Text color="red.600" fontWeight="bold">
+                Text Stack:
+              </Text>
+              <Text>HTML5</Text>
+              <Divider
+                orientation="vertical"
+                border="2px"
+                height="10px"
+                bgColor="skyblue"
+              />
+              <Text>CSS3</Text>
+              <Divider
+                orientation="vertical"
+                bgColor="skyblue"
+                border="2px"
+                height="10px"
+              />
+              <Text>JavaScript</Text>
+            </HStack>
+            <Text>a collobarotive project built in 4 day team lead by me</Text>
+            <HStack>
+              <Button
+                leftIcon={<FaGithub />}
+                colorScheme="blue"
+                variant="solid"
+              >
+                Github
+              </Button>
+              <Button
+                leftIcon={<LinkIcon />}
+                colorScheme="blue"
+                variant="solid"
+              >
+                Live
+              </Button>
+            </HStack>
+          </VStack>
         </VStack>
       </SimpleGrid>
     </Stack>

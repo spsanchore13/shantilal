@@ -64,7 +64,7 @@ function Navbar() {
               smooth={true}
               duration={1000}
               spy={true}
-              offset={-50}
+              offset={-100}
               activeClass={styles.active}
             >
               HOME
@@ -74,7 +74,7 @@ function Navbar() {
               smooth={true}
               duration={1000}
               spy={true}
-              // offset={50}
+              offset={-40}
               activeClass={styles.active}
             >
               ABOUT
@@ -84,7 +84,7 @@ function Navbar() {
               smooth={true}
               duration={1000}
               spy={true}
-              // offset={50}
+              offset={-40}
               activeClass={styles.active}
             >
               SKILLS
@@ -94,7 +94,7 @@ function Navbar() {
               smooth={true}
               duration={1000}
               spy={true}
-              // offset={50}
+              offset={-40}
               activeClass={styles.active}
             >
               PROJECTS
@@ -104,7 +104,7 @@ function Navbar() {
               smooth={true}
               duration={1000}
               spy={true}
-              // offset={-10}
+              offset={-40}
               activeClass={styles.active}
             >
               CONTACT
