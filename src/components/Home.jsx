@@ -20,7 +20,11 @@ function Home() {
   const isDark = colorMode === "dark";
   const [isNotSmallScreen] = useMediaQuery("(min-width: 768px)");
   return (
-    <Stack id="home">
+    <Stack
+      id="home"
+      fontWeight={isDark ? "thin" : "hairline"}
+      letterSpacing="2px"
+    >
       <Flex
         justifyContent="space-between"
         direction={isNotSmallScreen ? "row" : "column"}
@@ -56,7 +60,13 @@ function Home() {
             }}
           />
           <a href={myresume} download>
-            <Button mt={5} mb={5} colorScheme="blue">
+            <Button
+              mt={5}
+              mb={5}
+              colorScheme="blue"
+              fontWeight="semibold"
+              letterSpacing="2px"
+            >
               RESUME
               <DownloadIcon ml="8px" />
             </Button>

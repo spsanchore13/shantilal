@@ -16,6 +16,7 @@ import {
   Stack,
   Text,
   Textarea,
+  useColorMode,
   useMediaQuery,
   useToast,
   VStack,
@@ -24,9 +25,9 @@ import myImage from "../Image/spsanchore.jpg";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// AOS.init();
 
 function Contact() {
   const toast = useToast();
@@ -61,9 +62,16 @@ function Contact() {
         }
       );
   };
+  const { colorMode, toggleColorMode } = useColorMode();
 
+  const isDark = colorMode === "dark";
   return (
-    <Stack id="contact">
+    <Stack
+      id="contact"
+      p={2}
+      fontWeight={isDark ? "thin" : "hairline"}
+      letterSpacing="2px"
+    >
       <Text fontSize="3xl" align="center">
         CONTACT ME
       </Text>
@@ -96,6 +104,8 @@ function Contact() {
               onClick={() => window.open("https://wa.me/+919784102014")}
               colorScheme="whatsapp"
               leftIcon={<FaWhatsapp />}
+              fontWeight="semibold"
+              letterSpacing="2px"
             >
               WhatsApp
             </Button>
@@ -105,6 +115,8 @@ function Contact() {
               }
               colorScheme="linkedin"
               leftIcon={<FaLinkedin />}
+              fontWeight="semibold"
+              letterSpacing="2px"
             >
               LinkedIn
             </Button>
@@ -154,6 +166,8 @@ function Contact() {
                 _hover={{ backgroundColor: "blue.400" }}
                 bgColor="blue.500"
                 onClick={sendEmail}
+                fontWeight="semibold"
+                letterSpacing="2px"
               >
                 Send
               </Button>

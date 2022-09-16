@@ -14,9 +14,9 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import GitHubCalendar from "react-github-calendar";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// AOS.init();
 
 function About() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -40,7 +40,8 @@ function About() {
             <Text
               align="left"
               fontSize={["lg", "xl"]}
-              fontWeight={isDark ? "thin" : "semibold"}
+              fontWeight={isDark ? "thin" : "hairline"}
+              letterSpacing="2px"
             >
               Passion-driven learner and a web developer with the ability to
               write clean, reusable, optimised code. Skilled and experienced at
@@ -61,7 +62,8 @@ function About() {
                   <Text
                     fontSize={["md", "xl"]}
                     casing="capitalize"
-                    fontWeight={isDark ? "thin" : "semibold"}
+                    fontWeight={isDark ? "thin" : "hairline"}
+                    letterSpacing="2px"
                   >
                     Full Stack Web Development ( Full Time )
                   </Text>
@@ -73,7 +75,8 @@ function About() {
                   <Text
                     fontSize={["md", "xl"]}
                     casing="capitalize"
-                    fontWeight={isDark ? "thin" : "semibold"}
+                    fontWeight={isDark ? "thin" : "hairline"}
+                    letterSpacing="2px"
                   >
                     computer science and engineering ( b.tech )
                   </Text>
@@ -82,7 +85,8 @@ function About() {
                 <Container>
                   <Text
                     fontSize={["md", "xl"]}
-                    fontWeight={isDark ? "thin" : "semibold"}
+                    fontWeight={isDark ? "thin" : "hairline"}
+                    letterSpacing="2px"
                   >
                     12 <Text as="sup">th</Text> - PCM
                   </Text>
@@ -105,7 +109,12 @@ function About() {
                 src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-1.svg"
                 alt="icon"
               />
-              <Text>1200+ Hours Practical Coding</Text>
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                1200+ Hours Practical Coding
+              </Text>
             </HStack>
             <HStack spacing={5}>
               <Img
@@ -113,7 +122,12 @@ function About() {
                 src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-2.svg"
                 alt="icon"
               />
-              <Text>300 Hours Data Structures & Algorithms</Text>
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                300+ Hours Data Structures & Algorithms
+              </Text>
             </HStack>
             <HStack spacing={5}>
               <Img
@@ -121,7 +135,12 @@ function About() {
                 src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-3.svg"
                 alt="icon"
               />
-              <Text>100+ Hours Soft Skill Development</Text>
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                100+ Hours Soft Skill Development
+              </Text>
             </HStack>
             <HStack spacing={5}>
               <Img
@@ -129,7 +148,12 @@ function About() {
                 src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-4.svg"
                 alt="icon"
               />
-              <Text>100+ Hours Math & Logic</Text>
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                100+ Hours Math & Logic
+              </Text>
             </HStack>
             <HStack spacing={5}>
               <Img
@@ -137,7 +161,12 @@ function About() {
                 src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-5.svg"
                 alt="icon"
               />
-              <Text>80 Mini Projects</Text>
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                80+ Mini Projects
+              </Text>
             </HStack>
             <HStack spacing={5}>
               <Img
@@ -145,7 +174,12 @@ function About() {
                 src="https://www.masaischool.com/img/hire-masai-grads/FindTalent/find-talent-6.svg"
                 alt="icon"
               />
-              <Text>10+ Projects </Text>
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                10+ Projects{" "}
+              </Text>
             </HStack>
             <HStack spacing={5}>
               <Img
@@ -154,7 +188,12 @@ function About() {
                 src="https://git-scm.com/images/logos/logomark-orange@2x.png"
                 alt="git-commit"
               />
-              <Text>120+ Git Commits</Text>
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                120+ Git Commits
+              </Text>
             </HStack>
             <HStack spacing={5}>
               <Img
@@ -163,7 +202,12 @@ function About() {
                 src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                 alt="git-commit"
               />
-              <Text>220+ Contributions in the last year</Text>
+              <Text
+                fontWeight={isDark ? "thin" : "hairline"}
+                letterSpacing="2px"
+              >
+                220+ Contributions in the last year
+              </Text>
             </HStack>
           </SimpleGrid>
         </HStack>

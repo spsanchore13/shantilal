@@ -11,26 +11,47 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import { FaReact } from "react-icons/fa";
+import jslogo from "../Image/js.svg";
+import htmllogo from "../Image/html.png";
+import csslogo from "../Image/css.png";
+import reactlogo from "../Image/react.png";
+import reduxlogo from "../Image/redux.png";
+import jestlogo from "../Image/jest.png";
+import cypresslogo from "../Image/cypress.webp";
+import chakralogo from "../Image/chakralogo.png";
+import figmalogo from "../Image/figma.svg";
+import mongodblogo from "../Image/mongodb.svg";
+import dsalogo from "../Image/dsa.png";
+import githublogo from "../Image/github.png";
+import nodeljslogo from "../Image/nodejs.svg";
+import expresslogo from "../Image/expressjs.svg";
+
 function Skills() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   const isDark = colorMode === "dark";
   return (
     <Stack py="50px" px="10px" id="skills">
-      <Text fontSize="3xl" align="center">
+      <Text
+        fontSize="3xl"
+        align="center"
+        fontWeight={isDark ? "thin" : "hairline"}
+        letterSpacing="2px"
+      >
         Skills
       </Text>
-      <SimpleGrid columns={[2, 3, 4, 5]} p={10} spacing={5}>
+      <SimpleGrid columns={[2, 3, 4, 6]} p={10} spacing={5}>
         <Box align="center">
           <Img
             boxSize="100px"
-            src="https://cdn-icons-png.flaticon.com/512/732/732212.png?w=360"
+            src={htmllogo}
+            // src="https://cdn-icons-png.flaticon.com/512/732/732212.png?w=360"
           />
           <Text
-            color={isDark ? "gray.200" : "gray.600"}
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
             p="4"
             fontSize="xl"
-            fontWeight="semibold"
           >
             HTML
           </Text>
@@ -38,13 +59,14 @@ function Skills() {
         <Box align="center">
           <Img
             boxSize="100px"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+            src={csslogo}
+            // src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
           />
           <Text
-            color={isDark ? "gray.200" : "gray.600"}
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
             p="4"
             fontSize="xl"
-            fontWeight="semibold"
           >
             CSS
           </Text>
@@ -52,13 +74,15 @@ function Skills() {
         <Box align="center">
           <Img
             boxSize="100px"
-            src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
+            src={jslogo}
+            // src="https://brandfetch.com/_next/image?url=https%3A%2F%2Fasset.brandfetch.io%2FidIq_kF0rb%2Fidv3zwmSiY.jpeg&w=1920&q=75"
+            // src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
           />
           <Text
-            color={isDark ? "gray.200" : "gray.600"}
             p="4"
             fontSize="xl"
-            fontWeight="semibold"
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
           >
             JAVASCRIPT
           </Text>
@@ -67,13 +91,14 @@ function Skills() {
         <Box align="center">
           <Img
             boxSize="100px"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+            src={reactlogo}
+            // src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
           />
           <Text
-            color={isDark ? "gray.200" : "gray.600"}
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
             p="4"
             fontSize="xl"
-            fontWeight="semibold"
           >
             REACT
           </Text>
@@ -81,13 +106,14 @@ function Skills() {
         <Box align="center">
           <Img
             boxSize="100px"
-            src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
+            src={reduxlogo}
+            // src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
           />
           <Text
-            color={isDark ? "gray.200" : "gray.600"}
             p="4"
             fontSize="xl"
-            fontWeight="semibold"
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
           >
             REDUX
           </Text>
@@ -95,13 +121,107 @@ function Skills() {
         <Box align="center">
           <Img
             boxSize="100px"
-            src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+            src={nodeljslogo}
+            // src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
           />
           <Text
-            color={isDark ? "gray.200" : "gray.600"}
             p="4"
             fontSize="xl"
-            fontWeight="semibold"
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
+          >
+            NODE JS
+          </Text>
+        </Box>
+        <Box align="center">
+          <Img
+            boxSize="100px"
+            src={expresslogo}
+            // src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
+          />
+          <Text
+            p="4"
+            fontSize="xl"
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
+          >
+            EXPRESS JS
+          </Text>
+        </Box>
+        <Box align="center">
+          <Img
+            boxSize="100px"
+            src={mongodblogo}
+            // src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
+          />
+          <Text
+            p="4"
+            fontSize="xl"
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
+          >
+            MONGO DB
+          </Text>
+        </Box>
+        <Box align="center">
+          <Img
+            boxSize="100px"
+            borderRadius="50%"
+            src={chakralogo}
+            // src="https://images.opencollective.com/chakra-ui-pro/61bd1dd/logo/256.png"
+          />
+          <Text
+            p="4"
+            fontSize="xl"
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
+          >
+            CHAKRA-UI
+          </Text>
+        </Box>
+
+        <Box align="center">
+          <Img
+            boxSize="100px"
+            src={githublogo}
+            // src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+          />
+          <Text
+            p="4"
+            fontSize="xl"
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
+          >
+            GITHUB
+          </Text>
+        </Box>
+
+        <Box align="center">
+          <Img
+            boxSize="100px"
+            src={dsalogo}
+            // src="https://images.credly.com/images/e4e5214a-e9f3-414c-9ebc-d10467a92816/Data_Structures_and_Algorithms.png"
+          />
+          <Text
+            p="4"
+            fontSize="xl"
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
+          >
+            DSA
+          </Text>
+        </Box>
+        <Box align="center">
+          <Img
+            boxSize="100px"
+            src={figmalogo}
+            // src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+          />
+          <Text
+            p="4"
+            fontSize="xl"
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
           >
             FIGMA
           </Text>
@@ -109,44 +229,32 @@ function Skills() {
         <Box align="center">
           <Img
             boxSize="100px"
-            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            borderRadius="full"
+            src={cypresslogo}
+            // src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
           />
           <Text
-            color={isDark ? "gray.200" : "gray.600"}
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
             p="4"
             fontSize="xl"
-            fontWeight="semibold"
           >
-            GITHUB
+            CYPRESS
           </Text>
         </Box>
         <Box align="center">
           <Img
             boxSize="100px"
-            borderRadius="50%"
-            src="https://images.opencollective.com/chakra-ui-pro/61bd1dd/logo/256.png"
+            src={jestlogo}
+            // src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
           />
           <Text
-            color={isDark ? "gray.200" : "gray.600"}
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
             p="4"
             fontSize="xl"
-            fontWeight="semibold"
           >
-            CHAKRA-UI
-          </Text>
-        </Box>
-        <Box align="center">
-          <Img
-            boxSize="100px"
-            src="https://images.credly.com/images/e4e5214a-e9f3-414c-9ebc-d10467a92816/Data_Structures_and_Algorithms.png"
-          />
-          <Text
-            color={isDark ? "gray.200" : "gray.600"}
-            p="4"
-            fontSize="xl"
-            fontWeight="semibold"
-          >
-            DSA
+            JEST
           </Text>
         </Box>
       </SimpleGrid>

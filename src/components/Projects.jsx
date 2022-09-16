@@ -10,6 +10,7 @@ import {
   SimpleGrid,
   Stack,
   Text,
+  useColorMode,
   VStack,
 } from "@chakra-ui/react";
 import bestbuy1 from "../Image/bestbuy1.png";
@@ -18,23 +19,38 @@ import bathandbody1 from "../Image/bathandbody1.png";
 import todo1 from "../Image/todo1.png";
 import { LinkIcon } from "@chakra-ui/icons";
 import { FaGithub } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// AOS.init();
 
 function Projects() {
+  const { colorMode, toggleColorMode } = useColorMode();
+
+  const isDark = colorMode === "dark";
   return (
     <Stack
-      // border="2px solid red"
+      // border="1px solid red"
       id="project"
       p={[2, 10]}
+      maxWidth="100vw"
+      fontWeight={isDark ? "thin" : "hairline"}
+      letterSpacing="2px"
     >
-      <Text fontSize="3xl" align="center" fontWeight="bold">
+      <Text
+        // border="1px solid red"
+        fontSize="3xl"
+        align="center"
+        fontWeight="bold"
+      >
         Projects
       </Text>
-      <SimpleGrid columns={[1, 1, 2, 2]} spacing="40px">
+      <SimpleGrid
+        columns={[1, 1, 2, 2]}
+        spacing="40px"
+        //  border="1px solid red"
+      >
         <VStack
-          data-aos="fade-right"
+          // data-aos="fade-right"
           p={[2, 5]}
           spacing={2}
           borderRadius="10px"
@@ -82,7 +98,7 @@ function Projects() {
         </VStack>
 
         <VStack
-          data-aos="fade-left"
+          // data-aos="fade-left"
           spacing={2}
           p={[2, 5]}
           borderRadius="10px"
@@ -127,7 +143,7 @@ function Projects() {
         </VStack>
 
         <VStack
-          data-aos="fade-right"
+          // data-aos="fade-right"
           p={[2, 5]}
           spacing={2}
           borderRadius="10px"
@@ -172,7 +188,7 @@ function Projects() {
         </VStack>
 
         <VStack
-          data-aos="fade-left"
+          // data-aos="zoom-in-left"
           p={[2, 5]}
           spacing={2}
           borderRadius="10px"

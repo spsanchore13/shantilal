@@ -13,10 +13,9 @@ import "./app.css"
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
       <Navbar />
       <AllRoutes />
-      <Home />
+      {/* <Home /> */}
       <About />
       <Skills />
       <Projects />
