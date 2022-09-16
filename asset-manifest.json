@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shantilal/static/css/main.1cad6951.css",
-    "main.js": "/shantilal/static/js/main.051f6f05.js",
+    "main.css": "/shantilal/static/css/main.f65fd107.css",
+    "main.js": "/shantilal/static/js/main.2aaadd60.js",
     "static/media/bathandbody1.png": "/shantilal/static/media/bathandbody1.4b119c319cf81344b702.png",
     "static/media/spsanchore.jpg": "/shantilal/static/media/spsanchore.bb24efe864bf116863b5.jpg",
     "static/media/todo2.png": "/shantilal/static/media/todo2.dc23dd901ccd235160a8.png",
@@ -11,13 +11,26 @@
     "static/media/bathandbody2.png": "/shantilal/static/media/bathandbody2.f746da4bc82f091ede9f.png",
     "static/media/pharmeasy2.png": "/shantilal/static/media/pharmeasy2.6baf0d02729fb33ea41f.png",
     "static/media/todo1.png": "/shantilal/static/media/todo1.7ee0af44f1514ba45b62.png",
+    "static/media/redux.png": "/shantilal/static/media/redux.1b4bb5fceb01b19da59d.png",
+    "static/media/react.png": "/shantilal/static/media/react.81ed438b18e24116794d.png",
+    "static/media/dsa.png": "/shantilal/static/media/dsa.fbf8bafb4c7b2b7c9c7c.png",
     "static/media/Shantilal_Resume.pdf": "/shantilal/static/media/Shantilal_Resume.c33da9e79e2e57a922a3.pdf",
+    "static/media/chakralogo.png": "/shantilal/static/media/chakralogo.6d4684d36d618b85afe2.png",
+    "static/media/css.png": "/shantilal/static/media/css.1a57e67ac1fd2ea84d64.png",
+    "static/media/jest.png": "/shantilal/static/media/jest.809768de8350fa5f6a21.png",
+    "static/media/html.png": "/shantilal/static/media/html.ff3cf75e3b7cbb4ea77c.png",
+    "static/media/cypress.webp": "/shantilal/static/media/cypress.83cc1c5544907b2f2e1b.webp",
+    "static/media/nodejs.svg": "/shantilal/static/media/nodejs.615ffbea9529ca7047ed8a912bfd94b2.svg",
+    "static/media/mongodb.svg": "/shantilal/static/media/mongodb.0781b723446e1f8a1734f7831a9c3313.svg",
+    "static/media/figma.svg": "/shantilal/static/media/figma.0f4098dccb2a84e24331b00bc6a8dcf8.svg",
+    "static/media/expressjs.svg": "/shantilal/static/media/expressjs.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "index.html": "/shantilal/index.html",
-    "main.1cad6951.css.map": "/shantilal/static/css/main.1cad6951.css.map",
-    "main.051f6f05.js.map": "/shantilal/static/js/main.051f6f05.js.map"
+    "static/media/js.svg": "/shantilal/static/media/js.b879f838faf1cb951d1c2230fd933a39.svg",
+    "main.f65fd107.css.map": "/shantilal/static/css/main.f65fd107.css.map",
+    "main.2aaadd60.js.map": "/shantilal/static/js/main.2aaadd60.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cad6951.css",
-    "static/js/main.051f6f05.js"
+    "static/css/main.f65fd107.css",
+    "static/js/main.2aaadd60.js"
   ]
 }
