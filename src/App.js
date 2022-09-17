@@ -8,11 +8,17 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import AllRoutes from "./Routes/AllRoutes";
 import "./app.css"
+import Particle from "./components/Particle";
+import { useColorMode } from "@chakra-ui/react";
 
 
 function App() {
+  const { colorMode, toggleColorMode } = useColorMode();
+
+  const isDark = colorMode === "dark";
   return (
     <div className="App">
+      {isDark && <Particle />}
       <Navbar />
       <AllRoutes />
       {/* <Home /> */}
