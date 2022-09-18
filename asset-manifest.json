@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shantilal/static/css/main.f65fd107.css",
-    "main.js": "/shantilal/static/js/main.de62e24d.js",
+    "main.css": "/shantilal/static/css/main.9a1483d7.css",
+    "main.js": "/shantilal/static/js/main.19c88007.js",
     "static/media/bathandbody1.png": "/shantilal/static/media/bathandbody1.4b119c319cf81344b702.png",
     "static/media/spsanchore.jpg": "/shantilal/static/media/spsanchore.bb24efe864bf116863b5.jpg",
     "static/media/todo2.png": "/shantilal/static/media/todo2.dc23dd901ccd235160a8.png",
@@ -26,11 +26,11 @@
     "static/media/expressjs.svg": "/shantilal/static/media/expressjs.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "index.html": "/shantilal/index.html",
     "static/media/js.svg": "/shantilal/static/media/js.b879f838faf1cb951d1c2230fd933a39.svg",
-    "main.f65fd107.css.map": "/shantilal/static/css/main.f65fd107.css.map",
-    "main.de62e24d.js.map": "/shantilal/static/js/main.de62e24d.js.map"
+    "main.9a1483d7.css.map": "/shantilal/static/css/main.9a1483d7.css.map",
+    "main.19c88007.js.map": "/shantilal/static/js/main.19c88007.js.map"
   },
   "entrypoints": [
-    "static/css/main.f65fd107.css",
-    "static/js/main.de62e24d.js"
+    "static/css/main.9a1483d7.css",
+    "static/js/main.19c88007.js"
   ]
 }
