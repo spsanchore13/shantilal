@@ -7,12 +7,13 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import AllRoutes from "./Routes/AllRoutes";
-import "./app.css"
+import "./app.css";
 import Particle from "./components/Particle";
-import { useColorMode } from "@chakra-ui/react";
-
+import { useColorMode, useMediaQuery } from "@chakra-ui/react";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 function App() {
+  const [isNotSmallScreen] = useMediaQuery("(min-width: 768px)");
   const { colorMode, toggleColorMode } = useColorMode();
 
   const isDark = colorMode === "dark";
@@ -21,7 +22,7 @@ function App() {
       {isDark && <Particle />}
       <Navbar />
       <AllRoutes />
-      {/* <Home /> */}
+      <ScrollToTop />
       <About />
       <Skills />
       <Projects />

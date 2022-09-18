@@ -1,10 +1,7 @@
 import {
   Box,
   Button,
-  ButtonSpinner,
-  Container,
   Divider,
-  Flex,
   HStack,
   Img,
   SimpleGrid,
@@ -24,7 +21,7 @@ import { FaGithub } from "react-icons/fa";
 // AOS.init();
 
 function Projects() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   const isDark = colorMode === "dark";
   return (

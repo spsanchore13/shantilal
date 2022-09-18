@@ -11,6 +11,7 @@ const Particle = () => {
     // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(main);
   };
+
   return (
     <>
       <Particles
@@ -23,7 +24,7 @@ const Particle = () => {
           },
           particles: {
             number: {
-              value: 10,
+              value: 8,
               density: {
                 enable: false,
                 value_area: 1000,
@@ -39,7 +40,7 @@ const Particle = () => {
               },
             },
             opacity: {
-              value: 0.8,
+              value: 0.1,
               random: false,
               anim: {
                 enable: false,

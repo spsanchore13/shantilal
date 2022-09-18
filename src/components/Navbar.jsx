@@ -1,26 +1,19 @@
 import {
-  Button,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   Flex,
   HStack,
   IconButton,
-  Input,
-  ListItem,
   Spacer,
-  Text,
-  UnorderedList,
   useColorMode,
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
-// import { HashLink, NavHashLink } from "react-router-hash-link";
-import { NavLink } from "react-router-dom";
+
 import { FaSun, FaMoon } from "react-icons/fa";
 import styles from "./Navbar.module.css";
 import Social from "./Social";
@@ -94,7 +87,7 @@ function Navbar() {
               smooth={true}
               duration={1000}
               spy={true}
-              offset={-40}
+              offset={-30}
               activeClass={styles.active}
             >
               PROJECTS
@@ -104,7 +97,7 @@ function Navbar() {
               smooth={true}
               duration={1000}
               spy={true}
-              offset={-40}
+              offset={-30}
               activeClass={styles.active}
             >
               CONTACT
@@ -120,9 +113,14 @@ function Navbar() {
       </HStack>
 
       <HStack
+        position="sticky"
+        top={0}
         px="10px"
+        py="5px"
+        zIndex={10}
         borderBottom="1px"
         borderColor="gray.100"
+        bgColor={isDark ? "gray.800" : "white"}
         display={["flex", "flex", "flex", "none"]}
       >
         <IconButton

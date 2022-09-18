@@ -1,11 +1,5 @@
-import { Flex, HStack, Icon, VStack } from "@chakra-ui/react";
-import {
-  FaFacebookF,
-  FaGithub,
-  FaGoogle,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { HStack, Icon } from "@chakra-ui/react";
+import { FaGithub, FaGoogle, FaLinkedinIn } from "react-icons/fa";
 
 function Social() {
   return (
@@ -14,7 +8,7 @@ function Social() {
         as={FaGithub}
         boxSize="30"
         cursor="pointer"
-        onClick={() => window.open("https://www.linkedin.com/in/spsanchore13/")}
+        onClick={() => window.open("https://github.com/spsanchore13")}
       />
       <Icon
         as={FaLinkedinIn}
@@ -26,7 +20,7 @@ function Social() {
         as={FaGoogle}
         boxSize="30"
         cursor="pointer"
-        onClick={() => window.open("https://www.linkedin.com/in/spsanchore13/")}
+        onClick={() => window.open("mailto:shantilalpatliya18@gmail.com")}
       />
     </HStack>
   );

@@ -52,6 +52,7 @@ function Home() {
             options={{
               strings: [
                 "Full Stack Web Developer",
+                "MERN Developer",
                 "Problem Solver",
                 "Debugger",
               ],

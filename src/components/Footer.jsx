@@ -1,4 +1,4 @@
-import { HStack, Icon, Stack, Text } from "@chakra-ui/react";
+import { Icon, Stack, Text } from "@chakra-ui/react";
 import { FcLike } from "react-icons/fc";
 
 function Footer() {

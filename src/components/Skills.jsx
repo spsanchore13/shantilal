@@ -1,16 +1,12 @@
 import {
   Box,
-  Flex,
-  Grid,
-  GridItem,
-  Icon,
   Img,
   SimpleGrid,
   Stack,
   Text,
   useColorMode,
 } from "@chakra-ui/react";
-import { FaReact } from "react-icons/fa";
+
 import jslogo from "../Image/js.svg";
 import htmllogo from "../Image/html.png";
 import csslogo from "../Image/css.png";
@@ -27,7 +23,7 @@ import nodeljslogo from "../Image/nodejs.svg";
 import expresslogo from "../Image/expressjs.svg";
 
 function Skills() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   const isDark = colorMode === "dark";
   return (

@@ -1,15 +1,9 @@
 import { EmailIcon } from "@chakra-ui/icons";
 import {
-  Box,
   Button,
   Container,
-  Flex,
   FormControl,
   FormLabel,
-  Grid,
-  GridItem,
-  Heading,
-  HStack,
   Img,
   Input,
   SimpleGrid,
@@ -17,7 +11,6 @@ import {
   Text,
   Textarea,
   useColorMode,
-  useMediaQuery,
   useToast,
   VStack,
 } from "@chakra-ui/react";
@@ -32,7 +25,6 @@ import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 function Contact() {
   const toast = useToast();
   const form = useRef();
-  const [isNotSmallScreen] = useMediaQuery("(min-width: 768px)");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -62,7 +54,7 @@ function Contact() {
         }
       );
   };
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   const isDark = colorMode === "dark";
   return (
