@@ -28,12 +28,7 @@ function Skills() {
   const isDark = colorMode === "dark";
   return (
     <Stack py="50px" px="10px" id="skills">
-      <Text
-        fontSize="3xl"
-        align="center"
-        fontWeight={isDark ? "thin" : "hairline"}
-        letterSpacing="2px"
-      >
+      <Text fontSize="3xl" align="center" letterSpacing="2px" fontWeight="bold">
         Skills
       </Text>
       <SimpleGrid columns={[2, 3, 4, 6]} p={10} spacing={5}>

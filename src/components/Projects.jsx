@@ -62,7 +62,7 @@ function Projects() {
 
           <VStack spacing={3} align="left">
             <Text align="left">
-              Bestbuy is an american electronics product website
+              Bestbuy is an american electronics product website.
             </Text>
             <HStack>
               <Text color="red.600" fontWeight="bold">
@@ -84,12 +84,15 @@ function Projects() {
               />
               <Text>JavaScript</Text>
             </HStack>
-            <Text>a collobarotive project built in 4 day team lead by me</Text>
+            <Text>collobarotive project built in 4 day team lead by me</Text>
             <HStack>
               <Button
                 leftIcon={<FaGithub />}
                 colorScheme="blue"
                 variant="solid"
+                onClick={() =>
+                  window.open("https://github.com/Therobo77/BESTBUY.COM")
+                }
               >
                 Github
               </Button>
@@ -97,6 +100,7 @@ function Projects() {
                 leftIcon={<LinkIcon />}
                 colorScheme="blue"
                 variant="solid"
+                onClick={() => window.open("https://bestbuy-alpha.vercel.app/")}
               >
                 Live
               </Button>
@@ -120,7 +124,7 @@ function Projects() {
 
           <VStack spacing={3} align="left">
             <Text align="left">
-              Bestbuy is an american electronics product website
+              Pharmeasy is an indian healthcare product website
             </Text>
             <HStack>
               <Text color="red.600" fontWeight="bold">
@@ -142,12 +146,15 @@ function Projects() {
               />
               <Text>JavaScript</Text>
             </HStack>
-            <Text>a collobarotive project built in 4 day team lead by me</Text>
+            <Text>collobarotive project built in 4 day team lead by me</Text>
             <HStack>
               <Button
                 leftIcon={<FaGithub />}
                 colorScheme="blue"
                 variant="solid"
+                onClick={() =>
+                  window.open("https://github.com/spsanchore13/naive-cast-183")
+                }
               >
                 Github
               </Button>
@@ -155,6 +162,9 @@ function Projects() {
                 leftIcon={<LinkIcon />}
                 colorScheme="blue"
                 variant="solid"
+                onClick={() =>
+                  window.open("https://naive-cast-183.vercel.app/")
+                }
               >
                 Live
               </Button>
@@ -178,34 +188,39 @@ function Projects() {
 
           <VStack spacing={3} align="left">
             <Text align="left">
-              Bestbuy is an american electronics product website
+              Bathandbodyworks is an bodycare and fragrance product website
             </Text>
             <HStack>
               <Text color="red.600" fontWeight="bold">
                 Text Stack:
               </Text>
-              <Text>HTML5</Text>
+              <Text>React</Text>
               <Divider
                 orientation="vertical"
                 border="2px"
                 height="10px"
                 bgColor="skyblue"
               />
-              <Text>CSS3</Text>
+              <Text>Chakra-Ui</Text>
               <Divider
                 orientation="vertical"
                 bgColor="skyblue"
                 border="2px"
                 height="10px"
               />
-              <Text>JavaScript</Text>
+              <Text>Json-Server</Text>
             </HStack>
-            <Text>a collobarotive project built in 4 day team lead by me</Text>
+            <Text>solo project built in 4 day by me</Text>
             <HStack>
               <Button
                 leftIcon={<FaGithub />}
                 colorScheme="blue"
                 variant="solid"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/spsanchore13/protective-recess-3139"
+                  )
+                }
               >
                 Github
               </Button>
@@ -213,6 +228,9 @@ function Projects() {
                 leftIcon={<LinkIcon />}
                 colorScheme="blue"
                 variant="solid"
+                onClick={() =>
+                  window.open("https://protective-recess-3139.vercel.app/")
+                }
               >
                 Live
               </Button>
@@ -236,34 +254,39 @@ function Projects() {
 
           <VStack spacing={3} align="left">
             <Text align="left">
-              Bestbuy is an american electronics product website
+              Simple Todo Crud Application using redux and crud operations
             </Text>
             <HStack>
               <Text color="red.600" fontWeight="bold">
                 Text Stack:
               </Text>
-              <Text>HTML5</Text>
+              <Text>React</Text>
               <Divider
                 orientation="vertical"
                 border="2px"
                 height="10px"
                 bgColor="skyblue"
               />
-              <Text>CSS3</Text>
+              <Text>Redux</Text>
               <Divider
                 orientation="vertical"
                 bgColor="skyblue"
                 border="2px"
                 height="10px"
               />
-              <Text>JavaScript</Text>
+              <Text>Json-Server</Text>
             </HStack>
-            <Text>a collobarotive project built in 4 day team lead by me</Text>
+            <Text>solo project built in 1 day by me</Text>
             <HStack>
               <Button
                 leftIcon={<FaGithub />}
                 colorScheme="blue"
                 variant="solid"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/masai-course/Shantilal_fw19_0162/tree/master/unit-5/sprint-2/day-2/assignments/react-redux-am-2"
+                  )
+                }
               >
                 Github
               </Button>
@@ -271,6 +294,9 @@ function Projects() {
                 leftIcon={<LinkIcon />}
                 colorScheme="blue"
                 variant="solid"
+                onClick={() =>
+                  window.open("https://todo-axios-redux.vercel.app/")
+                }
               >
                 Live
               </Button>

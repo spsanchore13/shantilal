@@ -64,7 +64,7 @@ function Contact() {
       fontWeight={isDark ? "thin" : "hairline"}
       letterSpacing="2px"
     >
-      <Text fontSize="3xl" align="center">
+      <Text fontSize="3xl" align="center" fontWeight="bold">
         CONTACT ME
       </Text>
       <SimpleGrid columns={[1, 1, 2, 2]} spacing="10" py={10}>

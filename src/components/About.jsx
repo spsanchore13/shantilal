@@ -26,7 +26,7 @@ function About() {
   return (
     <>
       <Stack id="about" py={10} justify="center" align="center">
-        <Text fontSize="3xl" align="center">
+        <Text fontSize="3xl" align="center" fontWeight="bold">
           ABOUT
         </Text>
         <SimpleGrid
