@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/shantilal/static/css/main.95833657.css",
-    "main.js": "/shantilal/static/js/main.5febddbf.js",
+    "main.css": "/shantilal/static/css/main.0dbb8de8.css",
+    "main.js": "/shantilal/static/js/main.a98a4635.js",
     "static/media/bathandbody1.png": "/shantilal/static/media/bathandbody1.4b119c319cf81344b702.png",
-    "static/media/spsanchore.jpg": "/shantilal/static/media/spsanchore.bb24efe864bf116863b5.jpg",
     "static/media/todo2.png": "/shantilal/static/media/todo2.dc23dd901ccd235160a8.png",
     "static/media/bestbuy1.png": "/shantilal/static/media/bestbuy1.ae3b5288474e4c1f3f11.png",
     "static/media/pharmeasy1.png": "/shantilal/static/media/pharmeasy1.a451bb5af082d4c45c78.png",
     "static/media/bestbuy2.png": "/shantilal/static/media/bestbuy2.7376d2b2b9254fee5d14.png",
     "static/media/bathandbody2.png": "/shantilal/static/media/bathandbody2.f746da4bc82f091ede9f.png",
     "static/media/pharmeasy2.png": "/shantilal/static/media/pharmeasy2.6baf0d02729fb33ea41f.png",
+    "static/media/spsanchore.png": "/shantilal/static/media/spsanchore.3e7672500d0ce8336ee6.png",
     "static/media/todo1.png": "/shantilal/static/media/todo1.7ee0af44f1514ba45b62.png",
     "static/media/redux.png": "/shantilal/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/react.png": "/shantilal/static/media/react.81ed438b18e24116794d.png",
     "static/media/dsa.png": "/shantilal/static/media/dsa.fbf8bafb4c7b2b7c9c7c.png",
-    "static/media/Shantilal_Resume.pdf": "/shantilal/static/media/Shantilal_Resume.c33da9e79e2e57a922a3.pdf",
+    "static/media/Shantilal_Resume.pdf": "/shantilal/static/media/Shantilal_Resume.a02ce8660110e3b1f3c8.pdf",
     "static/media/chakralogo.png": "/shantilal/static/media/chakralogo.6d4684d36d618b85afe2.png",
     "static/media/css.png": "/shantilal/static/media/css.1a57e67ac1fd2ea84d64.png",
     "static/media/jest.png": "/shantilal/static/media/jest.809768de8350fa5f6a21.png",
@@ -26,11 +26,11 @@
     "static/media/expressjs.svg": "/shantilal/static/media/expressjs.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "index.html": "/shantilal/index.html",
     "static/media/js.svg": "/shantilal/static/media/js.b879f838faf1cb951d1c2230fd933a39.svg",
-    "main.95833657.css.map": "/shantilal/static/css/main.95833657.css.map",
-    "main.5febddbf.js.map": "/shantilal/static/js/main.5febddbf.js.map"
+    "main.0dbb8de8.css.map": "/shantilal/static/css/main.0dbb8de8.css.map",
+    "main.a98a4635.js.map": "/shantilal/static/js/main.a98a4635.js.map"
   },
   "entrypoints": [
-    "static/css/main.95833657.css",
-    "static/js/main.5febddbf.js"
+    "static/css/main.0dbb8de8.css",
+    "static/js/main.a98a4635.js"
   ]
 }
