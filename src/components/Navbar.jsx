@@ -1,4 +1,5 @@
 import {
+  Button,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
@@ -19,7 +20,8 @@ import styles from "./Navbar.module.css";
 import Social from "./Social";
 import { Link } from "react-scroll";
 import { useRef } from "react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { DownloadIcon, HamburgerIcon } from "@chakra-ui/icons";
+import myresume from "../Resume/Shantilal_Resume.pdf";
 
 function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -92,6 +94,7 @@ function Navbar() {
             >
               PROJECTS
             </Link>
+
             <Link
               to="contact"
               smooth={true}
@@ -102,6 +105,18 @@ function Navbar() {
             >
               CONTACT
             </Link>
+            <a href={myresume} download>
+              <Button
+                mt={5}
+                mb={5}
+                colorScheme="blue"
+                fontWeight="semibold"
+                letterSpacing="2px"
+              >
+                RESUME
+                <DownloadIcon ml="8px" />
+              </Button>
+            </a>
           </HStack>
           <IconButton
             ml="10px"
@@ -205,6 +220,18 @@ function Navbar() {
               >
                 CONTACT
               </Link>
+              <a href={myresume} download>
+                <Button
+                  mt={5}
+                  mb={5}
+                  colorScheme="blue"
+                  fontWeight="semibold"
+                  letterSpacing="2px"
+                >
+                  RESUME
+                  <DownloadIcon ml="8px" />
+                </Button>
+              </a>
             </VStack>
           </DrawerBody>
         </DrawerContent>

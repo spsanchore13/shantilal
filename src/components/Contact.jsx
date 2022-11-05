@@ -14,10 +14,13 @@ import {
   useToast,
   VStack,
 } from "@chakra-ui/react";
-import myImage from "../Image/spsanchore.jpg";
+import myImage from "../Image/spsanchore.png";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { useFormik } from "formik";
+import { contactFormSchema } from "../schemas/ContactForm";
+
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 // AOS.init();
@@ -26,34 +29,43 @@ function Contact() {
   const toast = useToast();
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      name: "",
+      message: "",
+    },
+    validationSchema: contactFormSchema,
+    onSubmit: (values, action) => {
+      console.log(values);
+      // emailjs
+      //   .sendForm(
+      //     "service_bmljxlc",
+      //     "template_y0zk1ki",
+      //     values,
+      //     process.env.REACT_APP_FORM_API_KEY
+      //   )
+      //   .then(
+      //     () => {
+      //       toast({
+      //         title: "Sent",
+      //         description: "We've sent your mail successfully",
+      //         status: "success",
+      //         duration: 2000,
+      //         isClosable: true,
+      //       });
+      //     },
+      //     () => {
+      //       toast({
+      //         title: `Fail`,
+      //         isClosable: true,
+      //       });
+      //     }
+      //   );
+      action.resetForm();
+    },
+  });
 
-    emailjs
-      .sendForm(
-        "service_bmljxlc",
-        "template_y0zk1ki",
-        form.current,
-        process.env.REACT_APP_FORM_API_KEY
-      )
-      .then(
-        () => {
-          toast({
-            title: "Sent",
-            description: "We've sent your mail successfully",
-            status: "success",
-            duration: 2000,
-            isClosable: true,
-          });
-        },
-        () => {
-          toast({
-            title: `Fail`,
-            isClosable: true,
-          });
-        }
-      );
-  };
   const { colorMode } = useColorMode();
 
   const isDark = colorMode === "dark";
@@ -73,14 +85,16 @@ function Contact() {
           p={10}
           data-aos="zoom-in"
           spacing={10}
+          justify="center"
         >
-          <Img
+          {/* <Img
             src={myImage}
             alt="img"
             rounded="full"
+            border="1px solid gray"
             boxSize="150px"
-            objectFit="cover"
-          />
+            objectFit="fill"
+          /> */}
           <Text fontSize="2xl" fontWeight="semibold">
             Shantilal Patliya
           </Text>
@@ -131,33 +145,46 @@ function Contact() {
             Send Me Email
           </Text>
           <Container>
-            <form ref={form}>
+            <form onSubmit={formik.handleSubmit}>
               <FormControl isRequired>
                 <FormLabel>Enter Name</FormLabel>
-                <Input type="text" name="user_name" mb={5} />
+                <Input
+                  onChange={formik.handleChange}
+                  value={formik.values.name}
+                  type="text"
+                  name="name"
+                  mb={5}
+                />
               </FormControl>
               <FormControl isRequired>
                 <FormLabel>Email address</FormLabel>
-                <Input type="email" name="user_email" mb={5} />
+                <Input
+                  type="email"
+                  onChange={formik.handleChange}
+                  value={formik.values.email}
+                  name="email"
+                  mb={5}
+                />
               </FormControl>
               <FormControl isRequired>
                 <FormLabel>Enter Your Message</FormLabel>
                 <Textarea
+                  onChange={formik.handleChange}
+                  value={formik.values.message}
                   name="message"
-                  // value={value}
-                  // onChange={handleInputChange}
                   placeholder="Here is a sample placeholder"
                   size="sm"
                   mb={5}
                 />
               </FormControl>
               <Button
+                type="submit"
                 leftIcon={<EmailIcon />}
                 variant="outline"
                 w="100%"
                 _hover={{ backgroundColor: "blue.400" }}
                 bgColor="blue.500"
-                onClick={sendEmail}
+                // onClick={sendEmail}
                 fontWeight="semibold"
                 letterSpacing="2px"
               >
