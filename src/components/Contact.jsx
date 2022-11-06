@@ -38,30 +38,30 @@ function Contact() {
     validationSchema: contactFormSchema,
     onSubmit: (values, action) => {
       console.log(values);
-      // emailjs
-      //   .sendForm(
-      //     "service_bmljxlc",
-      //     "template_y0zk1ki",
-      //     values,
-      //     process.env.REACT_APP_FORM_API_KEY
-      //   )
-      //   .then(
-      //     () => {
-      //       toast({
-      //         title: "Sent",
-      //         description: "We've sent your mail successfully",
-      //         status: "success",
-      //         duration: 2000,
-      //         isClosable: true,
-      //       });
-      //     },
-      //     () => {
-      //       toast({
-      //         title: `Fail`,
-      //         isClosable: true,
-      //       });
-      //     }
-      //   );
+      emailjs
+        .sendForm(
+          "service_bmljxlc",
+          "template_y0zk1ki",
+          values,
+          process.env.REACT_APP_FORM_API_KEY
+        )
+        .then(
+          () => {
+            toast({
+              title: "Sent",
+              description: "We've sent your mail successfully",
+              status: "success",
+              duration: 2000,
+              isClosable: true,
+            });
+          },
+          () => {
+            toast({
+              title: `Fail`,
+              isClosable: true,
+            });
+          }
+        );
       action.resetForm();
     },
   });
