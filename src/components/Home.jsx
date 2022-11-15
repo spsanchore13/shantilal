@@ -62,6 +62,11 @@ function Home() {
           />
           <a href={myresume} download>
             <Button
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/14Emkc91uy1Xc3bNkX57tLNhaeQmJdS7R/view?usp=share_link"
+                )
+              }
               mt={5}
               mb={5}
               colorScheme="blue"

@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Drawer,
   DrawerBody,
@@ -54,59 +55,75 @@ function Navbar() {
             fontWeight="semibold"
             letterSpacing="3px"
           >
-            <Link
-              to="home"
-              smooth={true}
-              duration={1000}
-              spy={true}
-              offset={-100}
-              activeClass={styles.active}
-            >
-              HOME
-            </Link>
-            <Link
-              to="about"
-              smooth={true}
-              duration={1000}
-              spy={true}
-              offset={-40}
-              activeClass={styles.active}
-            >
-              ABOUT
-            </Link>
-            <Link
-              to="skills"
-              smooth={true}
-              duration={1000}
-              spy={true}
-              offset={-40}
-              activeClass={styles.active}
-            >
-              SKILLS
-            </Link>
-            <Link
-              to="project"
-              smooth={true}
-              duration={1000}
-              spy={true}
-              offset={-30}
-              activeClass={styles.active}
-            >
-              PROJECTS
-            </Link>
+            <Box cursor="pointer">
+              <Link
+                cursor="pointer"
+                to="home"
+                smooth={true}
+                duration={1000}
+                spy={true}
+                offset={-100}
+                activeClass={styles.active}
+              >
+                HOME
+              </Link>
+            </Box>
+            <Box cursor="pointer">
+              <Link
+                to="about"
+                smooth={true}
+                duration={1000}
+                spy={true}
+                offset={-40}
+                activeClass={styles.active}
+              >
+                ABOUT
+              </Link>
+            </Box>
+            <Box cursor="pointer">
+              <Link
+                to="skills"
+                smooth={true}
+                duration={1000}
+                spy={true}
+                offset={-40}
+                activeClass={styles.active}
+              >
+                SKILLS
+              </Link>
+            </Box>
+            <Box cursor="pointer">
+              <Link
+                to="project"
+                smooth={true}
+                duration={1000}
+                spy={true}
+                offset={-30}
+                activeClass={styles.active}
+              >
+                PROJECTS
+              </Link>
+            </Box>
 
-            <Link
-              to="contact"
-              smooth={true}
-              duration={1000}
-              spy={true}
-              offset={-30}
-              activeClass={styles.active}
-            >
-              CONTACT
-            </Link>
+            <Box cursor="pointer">
+              <Link
+                to="contact"
+                smooth={true}
+                duration={1000}
+                spy={true}
+                offset={-30}
+                activeClass={styles.active}
+              >
+                CONTACT
+              </Link>
+            </Box>
             <a href={myresume} download>
               <Button
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/14Emkc91uy1Xc3bNkX57tLNhaeQmJdS7R/view?usp=share_link"
+                  )
+                }
                 mt={5}
                 mb={5}
                 colorScheme="blue"

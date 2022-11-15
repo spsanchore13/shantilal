@@ -1,3 +1,7 @@
+*{
+  letter-spacing: 2px;
+  
+}
 
 .image-container1{   
     background-image: url("./Image/bestbuy2.png");
@@ -43,7 +47,7 @@
   }
 
   .image-container4{   
-    background-image: url("./Image/todo2.png");
+    background-image: url("./Image/bettermart2.png");
     background-size: cover;
   }
  .image-container4 > img{

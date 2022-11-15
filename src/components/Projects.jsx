@@ -1,7 +1,6 @@
 import {
   Box,
   Button,
-  Divider,
   HStack,
   Img,
   SimpleGrid,
@@ -13,7 +12,8 @@ import {
 import bestbuy1 from "../Image/bestbuy1.png";
 import pharmeasy1 from "../Image/pharmeasy1.png";
 import bathandbody1 from "../Image/bathandbody1.png";
-import todo1 from "../Image/todo1.png";
+import bettermart1 from "../Image/bettermart1.png";
+
 import { LinkIcon } from "@chakra-ui/icons";
 import { FaGithub } from "react-icons/fa";
 // import AOS from "aos";
@@ -39,7 +39,7 @@ function Projects() {
         align="center"
         fontWeight="bold"
       >
-        Projects
+        PROJECTS
       </Text>
       <SimpleGrid
         columns={[1, 1, 2, 2]}
@@ -47,51 +47,44 @@ function Projects() {
         //  border="1px solid red"
       >
         <VStack
-          // data-aos="fade-right"
+          // data-aos="zoom-in-left"
           p={[2, 5]}
           spacing={2}
           borderRadius="10px"
           boxShadow="rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;"
         >
-          <Text align="left" fontSize="2xl" fontWeight="semibold">
-            Bestbuy Clone
+          <Text fontSize="2xl" fontWeight="semibold" casing="uppercase">
+            BETTRTMART ECOMMERCE
           </Text>
-          <Box className="image-container1">
-            <Img src={bestbuy1} alt="img" />
+          <Box className="image-container4">
+            <Img src={bettermart1} alt="img" h="250px" />
           </Box>
 
           <VStack spacing={3} align="left">
             <Text align="left">
-              Bestbuy is an american electronics product website.
+              Bettermart is an ecommerce platform from that sells dresses shoes
+              and many more things
             </Text>
             <HStack>
-              <Text color="red.600" fontWeight="bold">
+              <Text color="red.400" fontWeight="bold">
                 Text Stack:
               </Text>
-              <Text>HTML5</Text>
-              <Divider
-                orientation="vertical"
-                border="2px"
-                height="10px"
-                bgColor="skyblue"
-              />
-              <Text>CSS3</Text>
-              <Divider
-                orientation="vertical"
-                bgColor="skyblue"
-                border="2px"
-                height="10px"
-              />
-              <Text>JavaScript</Text>
+              <Text>React,</Text>
+              <Text>Redux,</Text>
+              <Text>Chakra-UI,</Text>
+              <Text>Express js,</Text>
+              <Text>Mongo DB</Text>
             </HStack>
-            <Text>collobarotive project built in 4 day team lead by me</Text>
+            <Text>Collobarotive project built in 4 day team lead by me</Text>
             <HStack>
               <Button
                 leftIcon={<FaGithub />}
                 colorScheme="blue"
                 variant="solid"
                 onClick={() =>
-                  window.open("https://github.com/Therobo77/BESTBUY.COM")
+                  window.open(
+                    "https://github.com/spsanchore13/spicy-muscle-8472"
+                  )
                 }
               >
                 Github
@@ -100,14 +93,15 @@ function Projects() {
                 leftIcon={<LinkIcon />}
                 colorScheme="blue"
                 variant="solid"
-                onClick={() => window.open("https://bestbuy-alpha.vercel.app/")}
+                onClick={() =>
+                  window.open("https://bettermart-eight.vercel.app/")
+                }
               >
                 Live
               </Button>
             </HStack>
           </VStack>
         </VStack>
-
         <VStack
           // data-aos="fade-left"
           spacing={2}
@@ -115,38 +109,27 @@ function Projects() {
           borderRadius="10px"
           boxShadow="rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;"
         >
-          <Text fontSize="2xl" fontWeight="semibold">
+          <Text fontSize="2xl" fontWeight="semibold" casing="uppercase">
             Pharmeasy Clone
           </Text>
           <Box className="image-container2">
-            <Img src={pharmeasy1} alt="img" />
+            <Img src={pharmeasy1} alt="img" h="250px" />
           </Box>
 
           <VStack spacing={3} align="left">
             <Text align="left">
-              Pharmeasy is an indian healthcare product website
+              PharmEasy is an Indian e-pharmacy company that sells medicines,
+              diagnostics and telehealth online.
             </Text>
             <HStack>
-              <Text color="red.600" fontWeight="bold">
+              <Text color="red.400" fontWeight="bold">
                 Text Stack:
               </Text>
-              <Text>HTML5</Text>
-              <Divider
-                orientation="vertical"
-                border="2px"
-                height="10px"
-                bgColor="skyblue"
-              />
-              <Text>CSS3</Text>
-              <Divider
-                orientation="vertical"
-                bgColor="skyblue"
-                border="2px"
-                height="10px"
-              />
+              <Text>HTML5,</Text>
+              <Text>CSS3,</Text>
               <Text>JavaScript</Text>
             </HStack>
-            <Text>collobarotive project built in 4 day team lead by me</Text>
+            <Text>Collobarotive project built in 4 day team lead by me</Text>
             <HStack>
               <Button
                 leftIcon={<FaGithub />}
@@ -171,6 +154,63 @@ function Projects() {
             </HStack>
           </VStack>
         </VStack>
+        <VStack
+          // data-aos="fade-right"
+          p={[2, 5]}
+          spacing={2}
+          borderRadius="10px"
+          boxShadow="rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;"
+        >
+          <Text
+            align="left"
+            fontSize="2xl"
+            fontWeight="semibold"
+            casing="uppercase"
+          >
+            Bestbuy Clone
+          </Text>
+          <Box className="image-container1" h="250px">
+            <Img src={bestbuy1} alt="img" />
+          </Box>
+
+          <VStack spacing={3} align="left">
+            <Text align="left">
+              Best Buy Co. Inc. is an American multinational consumer
+              electronics retailer
+            </Text>
+            <HStack>
+              <Text color="red.400" fontWeight="bold">
+                Text Stack:
+              </Text>
+              <Text>HTML5,</Text>
+
+              <Text>CSS3,</Text>
+
+              <Text>JavaScript</Text>
+            </HStack>
+            <Text>Collobarotive project built in 4 day team lead by me</Text>
+            <HStack>
+              <Button
+                leftIcon={<FaGithub />}
+                colorScheme="blue"
+                variant="solid"
+                onClick={() =>
+                  window.open("https://github.com/Therobo77/BESTBUY.COM")
+                }
+              >
+                Github
+              </Button>
+              <Button
+                leftIcon={<LinkIcon />}
+                colorScheme="blue"
+                variant="solid"
+                onClick={() => window.open("https://bestbuy-alpha.vercel.app/")}
+              >
+                Live
+              </Button>
+            </HStack>
+          </VStack>
+        </VStack>
 
         <VStack
           // data-aos="fade-right"
@@ -179,10 +219,10 @@ function Projects() {
           borderRadius="10px"
           boxShadow="rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;"
         >
-          <Text fontSize="2xl" fontWeight="semibold">
+          <Text fontSize="2xl" fontWeight="semibold" casing="uppercase">
             Bathandbodyworks Clone
           </Text>
-          <Box className="image-container3">
+          <Box className="image-container3" h="250px">
             <Img src={bathandbody1} alt="img" />
           </Box>
 
@@ -191,26 +231,16 @@ function Projects() {
               Bathandbodyworks is an bodycare and fragrance product website
             </Text>
             <HStack>
-              <Text color="red.600" fontWeight="bold">
+              <Text color="red.400" fontWeight="bold">
                 Text Stack:
               </Text>
-              <Text>React</Text>
-              <Divider
-                orientation="vertical"
-                border="2px"
-                height="10px"
-                bgColor="skyblue"
-              />
-              <Text>Chakra-Ui</Text>
-              <Divider
-                orientation="vertical"
-                bgColor="skyblue"
-                border="2px"
-                height="10px"
-              />
+              <Text>React,</Text>
+
+              <Text>Chakra-Ui,</Text>
+
               <Text>Json-Server</Text>
             </HStack>
-            <Text>solo project built in 4 day by me</Text>
+            <Text>Solo project built in 4 day by me</Text>
             <HStack>
               <Button
                 leftIcon={<FaGithub />}
@@ -230,72 +260,6 @@ function Projects() {
                 variant="solid"
                 onClick={() =>
                   window.open("https://protective-recess-3139.vercel.app/")
-                }
-              >
-                Live
-              </Button>
-            </HStack>
-          </VStack>
-        </VStack>
-
-        <VStack
-          // data-aos="zoom-in-left"
-          p={[2, 5]}
-          spacing={2}
-          borderRadius="10px"
-          boxShadow="rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;"
-        >
-          <Text fontSize="2xl" fontWeight="semibold">
-            Simple Todo Crud Application
-          </Text>
-          <Box className="image-container4">
-            <Img src={todo1} alt="img" />
-          </Box>
-
-          <VStack spacing={3} align="left">
-            <Text align="left">
-              Simple Todo Crud Application using redux and crud operations
-            </Text>
-            <HStack>
-              <Text color="red.600" fontWeight="bold">
-                Text Stack:
-              </Text>
-              <Text>React</Text>
-              <Divider
-                orientation="vertical"
-                border="2px"
-                height="10px"
-                bgColor="skyblue"
-              />
-              <Text>Redux</Text>
-              <Divider
-                orientation="vertical"
-                bgColor="skyblue"
-                border="2px"
-                height="10px"
-              />
-              <Text>Json-Server</Text>
-            </HStack>
-            <Text>solo project built in 1 day by me</Text>
-            <HStack>
-              <Button
-                leftIcon={<FaGithub />}
-                colorScheme="blue"
-                variant="solid"
-                onClick={() =>
-                  window.open(
-                    "https://github.com/masai-course/Shantilal_fw19_0162/tree/master/unit-5/sprint-2/day-2/assignments/react-redux-am-2"
-                  )
-                }
-              >
-                Github
-              </Button>
-              <Button
-                leftIcon={<LinkIcon />}
-                colorScheme="blue"
-                variant="solid"
-                onClick={() =>
-                  window.open("https://todo-axios-redux.vercel.app/")
                 }
               >
                 Live

@@ -4,7 +4,7 @@ import {
   Container,
   FormControl,
   FormLabel,
-  Img,
+ 
   Input,
   SimpleGrid,
   Stack,
@@ -14,8 +14,7 @@ import {
   useToast,
   VStack,
 } from "@chakra-ui/react";
-import myImage from "../Image/spsanchore.png";
-import { useRef } from "react";
+
 import emailjs from "@emailjs/browser";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { useFormik } from "formik";
@@ -27,8 +26,6 @@ import { contactFormSchema } from "../schemas/ContactForm";
 
 function Contact() {
   const toast = useToast();
-  const form = useRef();
-
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -37,11 +34,10 @@ function Contact() {
     },
     validationSchema: contactFormSchema,
     onSubmit: (values, action) => {
-      console.log(values);
       emailjs
-        .sendForm(
-          "service_bmljxlc",
-          "template_y0zk1ki",
+        .send(
+          process.env.REACT_APP_FORM_SERVICE_KEY,
+          process.env.REACT_APP_FORM_TEMPLATE_KEY,
           values,
           process.env.REACT_APP_FORM_API_KEY
         )
@@ -58,6 +54,7 @@ function Contact() {
           () => {
             toast({
               title: `Fail`,
+              description: "Try Later...",
               isClosable: true,
             });
           }
@@ -79,7 +76,7 @@ function Contact() {
       <Text fontSize="3xl" align="center" fontWeight="bold">
         CONTACT ME
       </Text>
-      <SimpleGrid columns={[1, 1, 2, 2]} spacing="10" py={10}>
+      <SimpleGrid columns={[1, 1, 2, 2]} spacing="10">
         <VStack
           boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px"
           p={10}

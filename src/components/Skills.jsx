@@ -21,6 +21,7 @@ import dsalogo from "../Image/dsa.png";
 import githublogo from "../Image/github.png";
 import nodeljslogo from "../Image/nodejs.svg";
 import expresslogo from "../Image/expressjs.svg";
+import mongooselogo from "../Image/mongoose.png";
 
 function Skills() {
   const { colorMode } = useColorMode();
@@ -29,15 +30,11 @@ function Skills() {
   return (
     <Stack py="50px" px="10px" id="skills">
       <Text fontSize="3xl" align="center" letterSpacing="2px" fontWeight="bold">
-        Skills
+        SKILLS
       </Text>
       <SimpleGrid columns={[2, 3, 4, 6]} p={10} spacing={5}>
         <Box align="center">
-          <Img
-            boxSize="100px"
-            src={htmllogo}
-            // src="https://cdn-icons-png.flaticon.com/512/732/732212.png?w=360"
-          />
+          <Img boxSize="80px" src={htmllogo} />
           <Text
             fontWeight={isDark ? "thin" : "hairline"}
             letterSpacing="2px"
@@ -49,7 +46,7 @@ function Skills() {
         </Box>
         <Box align="center">
           <Img
-            boxSize="100px"
+            boxSize="80px"
             src={csslogo}
             // src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
           />
@@ -64,7 +61,7 @@ function Skills() {
         </Box>
         <Box align="center">
           <Img
-            boxSize="100px"
+            boxSize="80px"
             src={jslogo}
             // src="https://brandfetch.com/_next/image?url=https%3A%2F%2Fasset.brandfetch.io%2FidIq_kF0rb%2Fidv3zwmSiY.jpeg&w=1920&q=75"
             // src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
@@ -81,7 +78,7 @@ function Skills() {
 
         <Box align="center">
           <Img
-            boxSize="100px"
+            boxSize="80px"
             src={reactlogo}
             // src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
           />
@@ -96,7 +93,7 @@ function Skills() {
         </Box>
         <Box align="center">
           <Img
-            boxSize="100px"
+            boxSize="80px"
             src={reduxlogo}
             // src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
           />
@@ -111,7 +108,7 @@ function Skills() {
         </Box>
         <Box align="center">
           <Img
-            boxSize="100px"
+            boxSize="80px"
             src={nodeljslogo}
             // src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
           />
@@ -126,7 +123,7 @@ function Skills() {
         </Box>
         <Box align="center">
           <Img
-            boxSize="100px"
+            boxSize="80px"
             src={expresslogo}
             // src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
           />
@@ -140,8 +137,19 @@ function Skills() {
           </Text>
         </Box>
         <Box align="center">
+          <Img boxSize="80px" src={mongooselogo} />
+          <Text
+            p="4"
+            fontSize="xl"
+            fontWeight={isDark ? "thin" : "hairline"}
+            letterSpacing="2px"
+          >
+            MONGOOSE
+          </Text>
+        </Box>
+        <Box align="center">
           <Img
-            boxSize="100px"
+            boxSize="80px"
             src={mongodblogo}
             // src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
           />
@@ -156,7 +164,7 @@ function Skills() {
         </Box>
         <Box align="center">
           <Img
-            boxSize="100px"
+            boxSize="80px"
             borderRadius="50%"
             src={chakralogo}
             // src="https://images.opencollective.com/chakra-ui-pro/61bd1dd/logo/256.png"
@@ -173,7 +181,7 @@ function Skills() {
 
         <Box align="center">
           <Img
-            boxSize="100px"
+            boxSize="80px"
             src={githublogo}
             // src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
           />
@@ -189,7 +197,7 @@ function Skills() {
 
         <Box align="center">
           <Img
-            boxSize="100px"
+            boxSize="80px"
             src={dsalogo}
             // src="https://images.credly.com/images/e4e5214a-e9f3-414c-9ebc-d10467a92816/Data_Structures_and_Algorithms.png"
           />
@@ -204,7 +212,7 @@ function Skills() {
         </Box>
         <Box align="center">
           <Img
-            boxSize="100px"
+            boxSize="80px"
             src={figmalogo}
             // src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
           />
@@ -219,7 +227,7 @@ function Skills() {
         </Box>
         <Box align="center">
           <Img
-            boxSize="100px"
+            boxSize="80px"
             borderRadius="full"
             src={cypresslogo}
             // src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
@@ -235,7 +243,7 @@ function Skills() {
         </Box>
         <Box align="center">
           <Img
-            boxSize="100px"
+            boxSize="80px"
             src={jestlogo}
             // src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
           />

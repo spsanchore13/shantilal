@@ -1,28 +1,23 @@
 import {
-  Box,
   Container,
   Divider,
   Flex,
-  Heading,
-  HStack,
-  Img,
   SimpleGrid,
   Stack,
   Text,
   useColorMode,
-  useMediaQuery,
   VStack,
 } from "@chakra-ui/react";
-import GitHubCalendar from "react-github-calendar";
+import States from "./States";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 // AOS.init();
 
 function About() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   const isDark = colorMode === "dark";
-  const [isNotSmallScreen] = useMediaQuery("(min-width: 768px)");
+
   return (
     <>
       <Stack id="about" py={10} justify="center" align="center">
@@ -98,10 +93,9 @@ function About() {
             </Flex>
           </Flex>
         </SimpleGrid>
-        <HStack w="100%" justify="center" p={10} data-aos="fade-up">
-          <GitHubCalendar username="spsanchore13" />
-        </HStack>
-        <HStack p={2} justify="center" data-aos="fade-up">
+
+        <States />
+        {/* <HStack p={2} justify="center" data-aos="fade-up">
           <SimpleGrid columns={[1, 1, 2, 2]} spacing={5}>
             <HStack spacing={5}>
               <Img
@@ -210,7 +204,7 @@ function About() {
               </Text>
             </HStack>
           </SimpleGrid>
-        </HStack>
+        </HStack> */}
       </Stack>
     </>
   );
