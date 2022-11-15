@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/shantilal/static/css/main.3d1477c0.css",
-    "main.js": "/shantilal/static/js/main.517b1ecd.js",
+    "main.css": "/shantilal/static/css/main.c2545818.css",
+    "main.js": "/shantilal/static/js/main.39c52a97.js",
+    "static/media/bettermart1.png": "/shantilal/static/media/bettermart1.a7dd4dfa4a5bb6eea05f.png",
+    "static/media/bettermart2.png": "/shantilal/static/media/bettermart2.7c63460a9a2b5ffbe599.png",
     "static/media/bathandbody1.png": "/shantilal/static/media/bathandbody1.4b119c319cf81344b702.png",
-    "static/media/todo2.png": "/shantilal/static/media/todo2.dc23dd901ccd235160a8.png",
     "static/media/bestbuy1.png": "/shantilal/static/media/bestbuy1.ae3b5288474e4c1f3f11.png",
     "static/media/pharmeasy1.png": "/shantilal/static/media/pharmeasy1.a451bb5af082d4c45c78.png",
     "static/media/bestbuy2.png": "/shantilal/static/media/bestbuy2.7376d2b2b9254fee5d14.png",
     "static/media/bathandbody2.png": "/shantilal/static/media/bathandbody2.f746da4bc82f091ede9f.png",
     "static/media/pharmeasy2.png": "/shantilal/static/media/pharmeasy2.6baf0d02729fb33ea41f.png",
     "static/media/spsanchore.png": "/shantilal/static/media/spsanchore.3e7672500d0ce8336ee6.png",
-    "static/media/todo1.png": "/shantilal/static/media/todo1.7ee0af44f1514ba45b62.png",
     "static/media/redux.png": "/shantilal/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/react.png": "/shantilal/static/media/react.81ed438b18e24116794d.png",
     "static/media/dsa.png": "/shantilal/static/media/dsa.fbf8bafb4c7b2b7c9c7c.png",
@@ -26,11 +26,11 @@
     "static/media/expressjs.svg": "/shantilal/static/media/expressjs.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "index.html": "/shantilal/index.html",
     "static/media/js.svg": "/shantilal/static/media/js.b879f838faf1cb951d1c2230fd933a39.svg",
-    "main.3d1477c0.css.map": "/shantilal/static/css/main.3d1477c0.css.map",
-    "main.517b1ecd.js.map": "/shantilal/static/js/main.517b1ecd.js.map"
+    "main.c2545818.css.map": "/shantilal/static/css/main.c2545818.css.map",
+    "main.39c52a97.js.map": "/shantilal/static/js/main.39c52a97.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d1477c0.css",
-    "static/js/main.517b1ecd.js"
+    "static/css/main.c2545818.css",
+    "static/js/main.39c52a97.js"
   ]
 }
