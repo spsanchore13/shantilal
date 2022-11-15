@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shantilal/static/css/main.0dbb8de8.css",
-    "main.js": "/shantilal/static/js/main.d14bf61f.js",
+    "main.css": "/shantilal/static/css/main.3d1477c0.css",
+    "main.js": "/shantilal/static/js/main.517b1ecd.js",
     "static/media/bathandbody1.png": "/shantilal/static/media/bathandbody1.4b119c319cf81344b702.png",
     "static/media/todo2.png": "/shantilal/static/media/todo2.dc23dd901ccd235160a8.png",
     "static/media/bestbuy1.png": "/shantilal/static/media/bestbuy1.ae3b5288474e4c1f3f11.png",
@@ -14,7 +14,7 @@
     "static/media/redux.png": "/shantilal/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/react.png": "/shantilal/static/media/react.81ed438b18e24116794d.png",
     "static/media/dsa.png": "/shantilal/static/media/dsa.fbf8bafb4c7b2b7c9c7c.png",
-    "static/media/Shantilal_Resume.pdf": "/shantilal/static/media/Shantilal_Resume.a02ce8660110e3b1f3c8.pdf",
+    "static/media/Shantilal_Resume.pdf": "/shantilal/static/media/Shantilal_Resume.1a8a41f1246b6a5341bb.pdf",
     "static/media/chakralogo.png": "/shantilal/static/media/chakralogo.6d4684d36d618b85afe2.png",
     "static/media/css.png": "/shantilal/static/media/css.1a57e67ac1fd2ea84d64.png",
     "static/media/jest.png": "/shantilal/static/media/jest.809768de8350fa5f6a21.png",
@@ -26,11 +26,11 @@
     "static/media/expressjs.svg": "/shantilal/static/media/expressjs.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "index.html": "/shantilal/index.html",
     "static/media/js.svg": "/shantilal/static/media/js.b879f838faf1cb951d1c2230fd933a39.svg",
-    "main.0dbb8de8.css.map": "/shantilal/static/css/main.0dbb8de8.css.map",
-    "main.d14bf61f.js.map": "/shantilal/static/js/main.d14bf61f.js.map"
+    "main.3d1477c0.css.map": "/shantilal/static/css/main.3d1477c0.css.map",
+    "main.517b1ecd.js.map": "/shantilal/static/js/main.517b1ecd.js.map"
   },
   "entrypoints": [
-    "static/css/main.0dbb8de8.css",
-    "static/js/main.d14bf61f.js"
+    "static/css/main.3d1477c0.css",
+    "static/js/main.517b1ecd.js"
   ]
 }
