@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shantilal/static/css/main.c2545818.css",
-    "main.js": "/shantilal/static/js/main.39c52a97.js",
+    "main.css": "/shantilal/static/css/main.579683f7.css",
+    "main.js": "/shantilal/static/js/main.927847be.js",
     "static/media/bettermart1.png": "/shantilal/static/media/bettermart1.a7dd4dfa4a5bb6eea05f.png",
     "static/media/bettermart2.png": "/shantilal/static/media/bettermart2.7c63460a9a2b5ffbe599.png",
     "static/media/bathandbody1.png": "/shantilal/static/media/bathandbody1.4b119c319cf81344b702.png",
@@ -26,11 +26,11 @@
     "static/media/expressjs.svg": "/shantilal/static/media/expressjs.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "index.html": "/shantilal/index.html",
     "static/media/js.svg": "/shantilal/static/media/js.b879f838faf1cb951d1c2230fd933a39.svg",
-    "main.c2545818.css.map": "/shantilal/static/css/main.c2545818.css.map",
-    "main.39c52a97.js.map": "/shantilal/static/js/main.39c52a97.js.map"
+    "main.579683f7.css.map": "/shantilal/static/css/main.579683f7.css.map",
+    "main.927847be.js.map": "/shantilal/static/js/main.927847be.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2545818.css",
-    "static/js/main.39c52a97.js"
+    "static/css/main.579683f7.css",
+    "static/js/main.927847be.js"
   ]
 }
