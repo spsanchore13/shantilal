@@ -38,10 +38,13 @@ function About() {
               fontWeight={isDark ? "thin" : "hairline"}
               letterSpacing="2px"
             >
-              Passion-driven learner and a web developer with the ability to
-              write clean, reusable, optimised code. Skilled and experienced at
-              building and maintaining MERN based web applications. Looking
-              forward to joining a progressive and challenging work environment.
+              Proficient full stack MERN developer seeking a challenging role in a
+              dynamic organization. Skilled in the MERN stack, responsive UI design
+              using CSS and external CSS libraries, and developing RESTful APIs.
+              Experienced in working in agile development environments, collaborating
+              with cross-functional teams, and deploying applications to production.
+              Looking to utilize technical skills and contribute to the development of
+              innovative web solutions.
             </Text>
           </Flex>
           <Flex justify="start" w={["100%", "100%"]} data-aos="fade-left">
